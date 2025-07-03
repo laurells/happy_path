@@ -6,3 +6,7 @@ INFO:root:Saved merged data to data/merged_2025-04-05_to_2025-07-03.csv
 INFO:root:Data quality report generated: reports/quality_report_2025-04-05_to_2025-07-03.txt
 INFO:root:Saved merged data to data/merged_2025-04-05_to_2025-07-03.csv
 INFO:root:Data quality report generated: reports/quality_report_2025-04-05_to_2025-07-03.txt
+ERROR:root:NOAA fetch failed for New York (attempt 1/3): 400 Client Error:  for url: https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND%3AUSW00094728&startdate=2025-04-05&enddate=2025-07-03&datatypeid=TMAX%2CTMIN&units=metric&limit=50000
+ERROR:root:NOAA fetch failed for New York (attempt 2/3): 400 Client Error:  for url: https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND%3AUSW00094728&startdate=2025-04-05&enddate=2025-07-03&datatypeid=TMAX%2CTMIN&units=metric&limit=50000
+ERROR:root:NOAA fetch failed for New York (attempt 3/3): 400 Client Error:  for url: https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&stationid=GHCND%3AUSW00094728&startdate=2025-04-05&enddate=2025-07-03&datatypeid=TMAX%2CTMIN&units=metric&limit=50000
+ERROR:root:NOAA API failed after 3 attempts for New York. Falling back to backup.

@@ -35,7 +35,7 @@ def fetch_weather_data(city_config: Dict, start_date: str, end_date: str, api_to
         "enddate": end_date,
         "datatypeid": "TMAX,TMIN",
         "units": "metric",
-        "limit": 1000
+        "limit": 50000
     }
     max_retries = 3
     for attempt in range(max_retries):

@@ -10,6 +10,7 @@ from pipeline.data_quality import run_data_quality_checks, generate_quality_repo
 from datetime import datetime
 import json
 import numpy as np
+from pytz import timezone
 
 """
 Main data pipeline orchestration module.
@@ -60,8 +61,13 @@ def run_pipeline(start_date: str, end_date: str):
     df.to_csv(out_path, index=False)
     logging.info(f"Saved merged data to {out_path}") 
 
+    # Use New York timezone for all reporting
+    ny_tz = timezone('America/New_York')
+    now_local = datetime.now(ny_tz)
+    report_date = now_local.strftime('%Y-%m-%d')
+
      # Run quality checks
-    quality_report = run_data_quality_checks(df, datetime.now().strftime('%Y-%m-%d'))
+    quality_report = run_data_quality_checks(df, report_date)
     report_path = f"reports/quality_report_{start_date}_to_{end_date}.txt"
     generate_quality_report(quality_report, report_path)
     

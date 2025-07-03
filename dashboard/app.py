@@ -7,16 +7,21 @@ import glob
 import os
 import json
 from sklearn.linear_model import LinearRegression
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
+from pytz import timezone
 
 # City coordinates for mapping
 CITY_COORDS = {
-    "New York": {"lat": 40.7128, "lon": -74.0060},
-    "Chicago": {"lat": 41.8781, "lon": -87.6298},
-    "Houston": {"lat": 29.7604, "lon": -95.3698},
-    "Phoenix": {"lat": 33.4484, "lon": -112.0740},
-    "Seattle": {"lat": 47.6062, "lon": -122.3321},
+    "New York": {"lat": 40.7128, "lon": -74.0060, "tz": "America/New_York"},
+    "Chicago": {"lat": 41.8781, "lon": -87.6298, "tz": "America/Chicago"},
+    "Houston": {"lat": 29.7604, "lon": -95.3698, "tz": "America/Chicago"},
+    "Phoenix": {"lat": 33.4484, "lon": -112.0740, "tz": "America/Phoenix"},
+    "Seattle": {"lat": 47.6062, "lon": -122.3321, "tz": "America/Los_Angeles"},
 }
+
+@st.cache_data(ttl=3600)
+def load_data(filepath):
+    return pd.read_csv(filepath)
 
 def show_main_dashboard():
     st.title("US Energy & Weather Data Dashboard")
@@ -29,11 +34,21 @@ def show_main_dashboard():
 
     latest_file = get_latest_data_file()
     if latest_file:
-        df = pd.read_csv(latest_file)
+        df = load_data(latest_file)
         df["date"] = pd.to_datetime(df["date"])
     else:
         st.error("No data file found. Please run the pipeline first.")
         st.stop()
+
+    # Use New York timezone for 'last updated' if multiple cities, or selected city's timezone if only one
+    if len(df["city"].unique()) == 1:
+        city = df["city"].unique()[0]
+        tz_str = CITY_COORDS.get(city, {}).get("tz", "America/New_York")
+    else:
+        tz_str = "America/New_York"
+    local_tz = timezone(tz_str)
+    now_local = datetime.now(local_tz)
+    st.caption(f"Last checked: {now_local.strftime('%Y-%m-%d %H:%M %Z')}")
 
     # Sidebar filters
     default_start = df["date"].min().date()
