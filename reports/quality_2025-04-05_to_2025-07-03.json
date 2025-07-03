@@ -1,0 +1,3888 @@
+{
+  "run_date": "2025-07-03",
+  "missing_values": {
+    "summary": {
+      "date": 0,
+      "city": 0,
+      "tmax_f": 0,
+      "tmin_f": 0,
+      "energy_mwh": 304
+    }
+  },
+  "outliers": {
+    "temperature": {
+      "count": 0,
+      "records": []
+    },
+    "energy": {
+      "count": 465,
+      "records": [
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -125.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -315.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "New York",
+          "energy_mwh": -39144.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "New York",
+          "energy_mwh": -38834.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "New York",
+          "energy_mwh": -39324.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "New York",
+          "energy_mwh": -38897.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "New York",
+          "energy_mwh": -39144.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -29766.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -29695.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -29793.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -29781.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -29766.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8524.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8567.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8643.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8536.0
+        },
+        {
+          "date": "2025-04-05 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8524.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "New York",
+          "energy_mwh": -60041.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "New York",
+          "energy_mwh": -58889.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "New York",
+          "energy_mwh": -58084.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "New York",
+          "energy_mwh": -59687.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "New York",
+          "energy_mwh": -60041.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27179.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27062.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -26914.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27168.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27179.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7805.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7822.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7838.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7840.0
+        },
+        {
+          "date": "2025-04-06 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7805.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -274.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -475.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -366.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -420.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -274.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "New York",
+          "energy_mwh": -67725.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "New York",
+          "energy_mwh": -70400.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "New York",
+          "energy_mwh": -71566.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "New York",
+          "energy_mwh": -69065.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "New York",
+          "energy_mwh": -67725.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -31609.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -31457.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -31147.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -31607.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -31609.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -11460.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -11295.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -11136.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -11364.0
+        },
+        {
+          "date": "2025-04-07 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -11460.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -397.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -688.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -340.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -727.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -869.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -940.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -816.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -727.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25316.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "New York",
+          "energy_mwh": -24397.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "New York",
+          "energy_mwh": -24600.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "New York",
+          "energy_mwh": -24644.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25316.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35093.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35192.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35449.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35072.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35093.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -13778.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -13585.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -13607.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -13718.0
+        },
+        {
+          "date": "2025-04-08 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -13778.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46794.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "New York",
+          "energy_mwh": -45744.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "New York",
+          "energy_mwh": -44892.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46323.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46794.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37333.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37093.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -36660.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37184.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37333.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9182.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9729.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9928.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9422.0
+        },
+        {
+          "date": "2025-04-09 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9182.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49933.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "New York",
+          "energy_mwh": -51627.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "New York",
+          "energy_mwh": -52100.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "New York",
+          "energy_mwh": -50983.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49933.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39369.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39006.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -38654.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39234.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39369.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6000.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5660.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5614.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5834.0
+        },
+        {
+          "date": "2025-04-10 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6000.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -99.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -99.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "New York",
+          "energy_mwh": -50753.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "New York",
+          "energy_mwh": -48369.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "New York",
+          "energy_mwh": -47221.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49464.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "New York",
+          "energy_mwh": -50753.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -41276.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -41114.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -41224.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -41233.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -41276.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9841.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9881.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9874.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9757.0
+        },
+        {
+          "date": "2025-04-11 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9841.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -12950.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -14586.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -14307.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -14157.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Chicago",
+          "energy_mwh": -12950.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -321.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -420.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -99.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "New York",
+          "energy_mwh": -67485.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "New York",
+          "energy_mwh": -68039.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "New York",
+          "energy_mwh": -68609.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "New York",
+          "energy_mwh": -67673.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "New York",
+          "energy_mwh": -67485.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -38875.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39282.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39810.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -38998.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -38875.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8262.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8704.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8730.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8555.0
+        },
+        {
+          "date": "2025-04-12 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8262.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49942.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49458.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49233.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49832.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "New York",
+          "energy_mwh": -49942.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39484.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39261.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -38639.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39453.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -39484.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7254.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7154.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7272.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7250.0
+        },
+        {
+          "date": "2025-04-13 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7254.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "New York",
+          "energy_mwh": -47643.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "New York",
+          "energy_mwh": -50004.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "New York",
+          "energy_mwh": -51248.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "New York",
+          "energy_mwh": -48802.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "New York",
+          "energy_mwh": -47643.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -47611.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -47635.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -47449.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -47593.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -47611.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8291.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7846.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7544.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8083.0
+        },
+        {
+          "date": "2025-04-14 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -8291.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "New York",
+          "energy_mwh": -26619.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "New York",
+          "energy_mwh": -27635.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "New York",
+          "energy_mwh": -27734.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "New York",
+          "energy_mwh": -27232.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "New York",
+          "energy_mwh": -26619.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40878.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40462.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40276.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40684.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40878.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7295.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7298.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7285.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7277.0
+        },
+        {
+          "date": "2025-04-15 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7295.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1283.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1327.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1385.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1318.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1283.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "New York",
+          "energy_mwh": -42607.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "New York",
+          "energy_mwh": -42011.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "New York",
+          "energy_mwh": -41662.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "New York",
+          "energy_mwh": -42173.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "New York",
+          "energy_mwh": -42607.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34614.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35705.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -36981.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35014.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34614.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5590.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6057.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6334.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5822.0
+        },
+        {
+          "date": "2025-04-16 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5590.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -2492.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -2594.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -2664.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -2542.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -2492.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "New York",
+          "energy_mwh": -41619.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "New York",
+          "energy_mwh": -39661.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "New York",
+          "energy_mwh": -38964.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "New York",
+          "energy_mwh": -40748.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "New York",
+          "energy_mwh": -41619.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27136.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -26993.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27032.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27102.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27136.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -3325.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -3411.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -3506.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -3319.0
+        },
+        {
+          "date": "2025-04-17 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -3325.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -744.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -643.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -561.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -694.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -744.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "New York",
+          "energy_mwh": -44095.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46776.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "New York",
+          "energy_mwh": -47734.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "New York",
+          "energy_mwh": -45370.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "New York",
+          "energy_mwh": -44095.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35355.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34619.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34213.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34944.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -35355.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -4279.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -4108.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -3988.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -4219.0
+        },
+        {
+          "date": "2025-04-18 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -4279.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1488.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1534.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1609.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1488.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1488.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "New York",
+          "energy_mwh": -31687.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "New York",
+          "energy_mwh": -31050.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "New York",
+          "energy_mwh": -30930.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "New York",
+          "energy_mwh": -31488.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "New York",
+          "energy_mwh": -31687.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -36360.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -36486.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -36573.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -36488.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -36360.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6808.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6721.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6668.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6768.0
+        },
+        {
+          "date": "2025-04-19 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6808.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3360.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3480.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3336.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3476.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3360.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "New York",
+          "energy_mwh": -37836.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "New York",
+          "energy_mwh": -36411.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "New York",
+          "energy_mwh": -35686.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "New York",
+          "energy_mwh": -37015.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "New York",
+          "energy_mwh": -37836.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37175.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37144.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37121.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37259.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -37175.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7556.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7533.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7542.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7523.0
+        },
+        {
+          "date": "2025-04-20 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7556.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1546.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1257.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1238.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1360.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1546.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "New York",
+          "energy_mwh": -41230.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "New York",
+          "energy_mwh": -43586.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "New York",
+          "energy_mwh": -44780.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "New York",
+          "energy_mwh": -42404.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "New York",
+          "energy_mwh": -41230.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40276.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -41313.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -41613.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40754.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -40276.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9712.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9546.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9420.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9692.0
+        },
+        {
+          "date": "2025-04-21 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9712.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3100.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3160.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3176.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3139.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -3100.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "New York",
+          "energy_mwh": -26616.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25309.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25280.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25694.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "New York",
+          "energy_mwh": -26616.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32503.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32569.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32371.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32503.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32503.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10020.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9930.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9963.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9932.0
+        },
+        {
+          "date": "2025-04-22 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10020.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1961.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -2023.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -2058.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1992.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1961.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "New York",
+          "energy_mwh": -35582.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "New York",
+          "energy_mwh": -35478.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "New York",
+          "energy_mwh": -34628.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "New York",
+          "energy_mwh": -35987.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "New York",
+          "energy_mwh": -35582.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34530.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34265.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34252.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34249.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -34530.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9515.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9510.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9372.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9527.0
+        },
+        {
+          "date": "2025-04-23 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9515.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "New York",
+          "energy_mwh": -30572.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "New York",
+          "energy_mwh": -30113.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "New York",
+          "energy_mwh": -29964.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "New York",
+          "energy_mwh": -30203.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "New York",
+          "energy_mwh": -30572.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -31939.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32567.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32775.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -32252.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -31939.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5799.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6099.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6260.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5933.0
+        },
+        {
+          "date": "2025-04-24 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -5799.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1375.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1326.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1326.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1393.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1375.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46944.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "New York",
+          "energy_mwh": -47009.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "New York",
+          "energy_mwh": -47235.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46956.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46944.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27669.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27647.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27659.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27843.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -27669.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6604.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6482.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6455.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6538.0
+        },
+        {
+          "date": "2025-04-25 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -6604.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1650.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1834.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1857.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1734.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1650.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46030.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46464.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46668.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46177.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "New York",
+          "energy_mwh": -46030.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -14872.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -15966.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -16776.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -15332.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -14872.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7541.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7563.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7569.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7615.0
+        },
+        {
+          "date": "2025-04-26 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -7541.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1783.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1456.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1496.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1610.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -1783.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "New York",
+          "energy_mwh": -33768.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "New York",
+          "energy_mwh": -32902.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "New York",
+          "energy_mwh": -32888.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "New York",
+          "energy_mwh": -33246.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "New York",
+          "energy_mwh": -33768.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -10634.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -10010.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -9755.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -10357.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -10634.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10717.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10692.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10700.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10654.0
+        },
+        {
+          "date": "2025-04-27 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10717.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -4082.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -4066.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -4002.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -4071.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -4082.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "New York",
+          "energy_mwh": -41870.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "New York",
+          "energy_mwh": -44210.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "New York",
+          "energy_mwh": -44742.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "New York",
+          "energy_mwh": -43234.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "New York",
+          "energy_mwh": -41870.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -19795.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -20310.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -20182.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -19996.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -19795.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9892.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9377.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9157.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9655.0
+        },
+        {
+          "date": "2025-04-28 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -9892.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -778.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -948.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -982.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -900.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Houston",
+          "energy_mwh": -778.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25731.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "New York",
+          "energy_mwh": -24660.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "New York",
+          "energy_mwh": -24605.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25322.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "New York",
+          "energy_mwh": -25731.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -20134.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -20008.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -19931.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -20161.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Phoenix",
+          "energy_mwh": -20134.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10453.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10555.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10555.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10463.0
+        },
+        {
+          "date": "2025-04-29 00:00:00",
+          "city": "Seattle",
+          "energy_mwh": -10453.0
+        }
+      ]
+    }
+  },
+  "freshness": {
+    "latest_data_date": "2025-06-30",
+    "current_date": "2025-07-03",
+    "is_stale": true,
+    "days_since_update": 3
+  },
+  "details": {
+    "missing_tmax_f": [],
+    "missing_tmin_f": [],
+    "missing_energy_mwh": [
+      {
+        "date": "2025-04-30 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-04-30 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-04-30 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-04-30 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-04-30 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-01 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-01 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-01 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-01 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-01 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-02 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-02 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-02 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-02 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-02 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-03 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-03 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-03 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-03 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-03 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-04 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-04 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-04 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-04 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-04 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-05 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-05 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-05 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-05 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-05 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-06 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-06 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-06 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-06 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-06 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-07 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-07 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-07 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-07 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-07 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-08 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-08 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-08 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-08 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-08 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-09 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-09 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-09 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-09 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-09 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-10 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-10 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-10 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-10 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-10 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-11 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-11 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-11 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-11 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-11 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-12 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-12 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-12 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-12 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-12 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-13 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-13 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-13 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-13 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-13 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-14 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-14 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-14 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-14 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-14 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-15 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-15 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-15 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-15 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-15 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-16 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-16 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-16 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-16 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-16 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-17 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-17 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-17 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-17 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-17 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-18 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-18 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-18 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-18 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-18 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-19 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-19 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-19 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-19 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-19 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-20 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-20 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-20 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-20 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-20 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-21 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-21 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-21 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-21 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-21 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-22 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-22 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-22 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-22 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-22 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-23 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-23 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-23 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-23 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-23 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-24 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-24 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-24 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-24 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-24 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-25 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-25 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-25 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-25 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-25 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-26 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-26 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-26 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-26 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-26 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-27 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-27 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-27 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-27 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-27 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-28 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-28 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-28 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-28 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-28 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-29 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-29 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-29 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-29 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-29 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-30 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-30 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-30 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-30 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-30 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-31 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-31 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-31 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-31 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-05-31 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-01 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-01 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-01 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-01 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-01 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-02 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-02 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-02 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-02 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-02 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-03 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-03 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-03 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-03 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-03 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-04 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-04 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-04 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-04 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-04 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-05 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-05 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-05 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-05 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-05 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-06 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-06 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-06 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-06 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-06 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-07 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-07 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-07 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-07 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-07 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-08 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-08 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-08 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-08 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-08 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-09 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-09 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-09 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-09 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-09 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-10 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-10 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-10 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-10 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-10 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-11 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-11 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-11 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-11 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-11 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-12 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-12 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-12 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-12 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-12 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-13 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-13 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-13 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-13 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-13 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-14 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-14 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-14 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-14 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-14 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-15 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-15 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-15 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-15 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-15 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-16 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-16 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-16 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-16 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-16 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-17 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-17 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-17 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-17 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-17 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-18 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-18 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-18 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-18 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-18 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-19 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-19 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-19 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-19 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-19 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-20 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-20 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-20 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-20 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-20 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-21 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-21 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-21 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-21 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-21 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-22 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-22 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-22 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-22 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-22 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-23 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-23 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-23 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-23 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-23 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-24 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-24 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-24 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-24 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-24 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-25 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-25 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-25 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-25 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-25 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-26 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-26 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-26 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-26 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-26 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-27 00:00:00",
+        "city": "Chicago",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-27 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-27 00:00:00",
+        "city": "New York",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-27 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-27 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-28 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-28 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-28 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-29 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-29 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-29 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-30 00:00:00",
+        "city": "Houston",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-30 00:00:00",
+        "city": "Phoenix",
+        "energy_mwh": null
+      },
+      {
+        "date": "2025-06-30 00:00:00",
+        "city": "Seattle",
+        "energy_mwh": null
+      }
+    ]
+  },
+  "consistency": {
+    "duplicates": "2375",
+    "date_range": {
+      "start": "2025-04-05",
+      "end": "2025-06-30"
+    },
+    "cities_missing": []
+  }
+}

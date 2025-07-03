@@ -1,0 +1,22 @@
+# Core
+pandas>=2.0
+numpy>=1.24
+requests>=2.31
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# Visualization
+plotly>=5.18
+streamlit>=1.32
+
+# Data Quality
+scipy>=1.11
+
+# Logging
+loguru>=0.7
+
+# For regression and stats
+scikit-learn>=1.4
+
+# Map visualization
+geopandas>=0.14 
