@@ -1,0 +1,20 @@
+[project]
+name = "happy_path"
+version = "0.1.0"
+description = "Energy and weather data analytics pipeline and dashboard"
+authors = [{ name = "Your Name" }]
+requires-python = ">=3.9"
+
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "requests>=2.31",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "plotly>=5.18",
+    "streamlit>=1.32",
+    "scipy>=1.11",
+    "loguru>=0.7",
+    "scikit-learn>=1.4",
+    "geopandas>=0.14"
+]
