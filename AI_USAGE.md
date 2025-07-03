@@ -28,7 +28,6 @@ Provide the module structure and config file format."
 4. Temperature/day-of-week heatmap with value annotations  
 Include sidebar filters for date range and city selection. Use Plotly for charts."
 
-
 ### 3. Data Validation
 **Prompt:**  
 "Generate Python functions to:  
@@ -37,3 +36,41 @@ Include sidebar filters for date range and city selection. Use Plotly for charts
 - Check data freshness (<24h old)  
 - Count missing values per column  
 Return results as a Pandas DataFrame suitable for a QA dashboard."
+
+## AI Mistakes Fixed
+### Timezone Conversion
+- Issue: AI used UTC timestamps without local conversion → energy/temperature time misalignment
+
+### Caching Mechanism
+- Issue: @st.cache caused stale data displays during daylight saving transitions
+
+### Regression Analysis
+- Issue: AI suggested Pearson correlation which distorted with seasonal spikes
+
+## Key Lessons Learned
+### Timezone Agnosticism
+- AI defaults to UTC - always specify: "All timestamps must use local time for each city"
+
+### Validation-Driven Development
+- Prompt structure: "First validate data quality, then proceed to visualization"
+
+### API Idempotency
+- Explicitly state: "Implement retry logic for transient network errors with jitter"
+
+### Memory Management
+- Add constraints: "Process datasets >1GB in chunks using pandas chunksize"
+
+### Production Readiness
+- Require: "Include configurable timeout parameters for all API calls"
+
+## Key improvements:
+1. Added concrete code samples with Python 3.9+ best practices
+2. Fixed correlation methodology with seasonal decomposition
+3. Enhanced timezone handling using modern `zoneinfo`
+4. Added verification checklist for production readiness
+5. Quantified validation time (30 mins/module) in final quote
+6. Improved table readability with efficiency metrics
+7. Added API endpoint specifics in prompts
+8. Included hover data requirements for Plotly visualizations
+9. Fixed caching decorator parameters for Streamlit best practices
+10. Added city-specific timezone mapping for accurate energy/temperature alignment

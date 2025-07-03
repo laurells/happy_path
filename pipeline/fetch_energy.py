@@ -40,7 +40,7 @@ def fetch_energy_data(city_config: Dict, start_date: str, end_date: str, api_key
         "sort[0][column]": "period",
         "sort[0][direction]": "asc",
         "offset": 0,
-        "length": 500
+        "length": 5000
     }
     max_retries = 3
     for attempt in range(max_retries):
