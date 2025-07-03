@@ -5,12 +5,18 @@ import os
 
 """
 Module for data quality checks and reporting.
+Provides functions to analyze missing values, outliers, data freshness, and consistency in the merged dataset.
 """
 
 def run_data_quality_checks(data: pd.DataFrame, report_date: str) -> dict:
     """
     Run comprehensive data quality checks on the merged dataset.
     Returns a dictionary with quality metrics and detailed issue reports.
+    Checks include:
+      - Missing values
+      - Outliers (temperature and energy)
+      - Data freshness
+      - Data consistency (duplicates, date range, missing cities)
     """
     # Ensure numeric types for checks
     data['energy_mwh'] = pd.to_numeric(data['energy_mwh'], errors='coerce')
@@ -21,7 +27,7 @@ def run_data_quality_checks(data: pd.DataFrame, report_date: str) -> dict:
     if not isinstance(data['date'], pd.DatetimeIndex):
         data['date'] = pd.to_datetime(data['date'])
     
-    # Initialize report
+    # Initialize report structure
     report = {
         'run_date': report_date,
         'missing_values': {},
@@ -34,13 +40,13 @@ def run_data_quality_checks(data: pd.DataFrame, report_date: str) -> dict:
     missing_counts = data.isnull().sum()
     report['missing_values']['summary'] = missing_counts.to_dict()
     
-    # Detailed missing records
+    # Detailed missing records for each key column
     for column in ['tmax_f', 'tmin_f', 'energy_mwh']:
         missing_df = data[data[column].isnull()][['date', 'city', column]]
         report['details'][f'missing_{column}'] = missing_df.to_dict('records')
     
     # 2. Outlier Detection
-    # Temperature outliers
+    # Temperature outliers: extreme values or logical errors
     temp_outliers = data[
         (data['tmax_f'] > 130) | 
         (data['tmin_f'] < -50) |
@@ -51,7 +57,7 @@ def run_data_quality_checks(data: pd.DataFrame, report_date: str) -> dict:
         'records': temp_outliers[['date', 'city', 'tmax_f', 'tmin_f']].to_dict('records')
     }
     
-    # Energy outliers
+    # Energy outliers: negative consumption is not possible
     energy_outliers = data[data['energy_mwh'] < 0]
     report['outliers']['energy'] = {
         'count': len(energy_outliers),
@@ -81,8 +87,12 @@ def run_data_quality_checks(data: pd.DataFrame, report_date: str) -> dict:
     
     return report
 
+
 def generate_quality_report(report: dict, output_path: str):
-    """Generate human-readable quality report and save to file"""
+    """
+    Generate a human-readable quality report and save to file.
+    The report includes summaries and detailed findings for missing values, outliers, freshness, and consistency.
+    """
     # Ensure the reports directory exists
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w') as f:

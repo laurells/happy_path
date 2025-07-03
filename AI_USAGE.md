@@ -37,7 +37,7 @@ Include sidebar filters for date range and city selection. Use Plotly for charts
 - Count missing values per column  
 Return results as a Pandas DataFrame suitable for a QA dashboard."
 
-## AI Mistakes Fixed
+## AI Mistakes Found
 ### Timezone Conversion
 - Issue: AI used UTC timestamps without local conversion → energy/temperature time misalignment
 

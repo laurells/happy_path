@@ -9,6 +9,7 @@ import time
 
 """
 Module for fetching weather data from NOAA API.
+Handles both real-time API calls and backup GHCND archive parsing for robustness.
 """
 
 NOAA_BASE_URL = "https://www.ncei.noaa.gov/cdo-web/api/v2/data"

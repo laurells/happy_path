@@ -8,6 +8,7 @@ import time
 
 """
 Module for fetching energy consumption data from EIA API.
+Handles both real-time API calls and backup CSV download for robustness.
 """
 
 EIA_BASE_URL = "https://api.eia.gov/v2/electricity/rto/daily-region-data/data/"
@@ -27,7 +28,7 @@ def fetch_energy_data(city_config: Dict, start_date: str, end_date: str, api_key
     Returns:
         List of dicts with energy data (date, usage, city, etc.)
     """
-    # Always use a 7-day window ending at end_date
+    # Always use a 7-day window ending at end_date for robustness
     end_dt = datetime.strptime(end_date, "%Y-%m-%d").date()
     start_dt = end_dt - timedelta(days=6)
     params = {
@@ -72,7 +73,7 @@ def fetch_energy_data(city_config: Dict, start_date: str, end_date: str, api_key
             time.sleep(2 ** attempt)
     # If all retries fail, use backup
     logging.error(f"EIA API failed after {max_retries} attempts for {city_config['name']}. Falling back to backup.")
-    # Try backup CSV download
+    # Try backup CSV download from EIA website
     try:
         backup_url = f"https://www.eia.gov/electricity/data/browser/csv.php?region={city_config['eia_region_code']}&type=consumption"
         backup_csv = f"data/eia_backup_{city_config['eia_region_code']}.csv"
@@ -89,6 +90,7 @@ def fetch_energy_data(city_config: Dict, start_date: str, end_date: str, api_key
         freq_col = [col for col in df.columns if 'frequency' in col.lower()]
         if not date_col or not value_col:
             raise ValueError('Could not find date or value columns in backup CSV')
+        # Select relevant columns and rename for consistency
         df = df[[date_col[0], value_col[0]] + (freq_col if freq_col else [])].rename(columns={date_col[0]: 'date', value_col[0]: 'energy_mwh'})
         # Filter by date range and frequency
         df['date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')

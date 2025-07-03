@@ -8,9 +8,10 @@ import os
 import json
 from sklearn.linear_model import LinearRegression
 from datetime import date, timedelta, datetime
-from pytz import timezone
+# from pytz import timezone  # Deprecated: use zoneinfo instead
+from zoneinfo import ZoneInfo  # Modern timezone handling
 
-# City coordinates for mapping
+# City coordinates, timezones, and mapping info for dashboard
 CITY_COORDS = {
     "New York": {"lat": 40.7128, "lon": -74.0060, "tz": "America/New_York"},
     "Chicago": {"lat": 41.8781, "lon": -87.6298, "tz": "America/Chicago"},
@@ -19,19 +20,38 @@ CITY_COORDS = {
     "Seattle": {"lat": 47.6062, "lon": -122.3321, "tz": "America/Los_Angeles"},
 }
 
+# Utility function for timezone conversion using zoneinfo
+# Converts a UTC datetime to the local time for a given city
+# This replaces the old pytz-based approach for modern Python (3.9+)
+def convert_to_local(utc_dt, city):
+    tz_mapping = {
+        "New York": "America/New_York",
+        "Chicago": "America/Chicago",
+        "Houston": "America/Chicago",
+        "Phoenix": "America/Phoenix",
+        "Seattle": "America/Los_Angeles",
+    }
+    return utc_dt.astimezone(ZoneInfo(tz_mapping.get(city, "America/New_York")))
+
+# Cache data loading for 1 hour to improve dashboard performance
 @st.cache_data(ttl=3600)
 def load_data(filepath):
+    """Load a CSV file as a DataFrame, with Streamlit caching."""
     return pd.read_csv(filepath)
 
+# Main dashboard page: all analytics and visualizations
+# -----------------------------------------------------
 def show_main_dashboard():
     st.title("US Energy & Weather Data Dashboard")
-    # Find latest merged data file
+
+    # Helper: Find the latest merged data file in the data/ directory
     def get_latest_data_file():
         files = glob.glob("data/merged_*.csv")
         if not files:
             return None
         return max(files, key=os.path.getctime)
 
+    # Load the latest data file
     latest_file = get_latest_data_file()
     if latest_file:
         df = load_data(latest_file)
@@ -40,23 +60,34 @@ def show_main_dashboard():
         st.error("No data file found. Please run the pipeline first.")
         st.stop()
 
-    # Use New York timezone for 'last updated' if multiple cities, or selected city's timezone if only one
+    # --- Timezone handling for 'last checked' ---
+    # Old approach (pytz):
+    # if len(df["city"].unique()) == 1:
+    #     city = df["city"].unique()[0]
+    #     tz_str = CITY_COORDS.get(city, {}).get("tz", "America/New_York")
+    # else:
+    #     tz_str = "America/New_York"
+    # local_tz = timezone(tz_str)
+    # now_local = datetime.now(local_tz)
+    # st.caption(f"Last checked: {now_local.strftime('%Y-%m-%d %H:%M %Z')}")
+
+    # New approach (zoneinfo): always show local time for selected city (or NY default)
+    utc_now = datetime.utcnow().replace(tzinfo=ZoneInfo("UTC"))
     if len(df["city"].unique()) == 1:
         city = df["city"].unique()[0]
-        tz_str = CITY_COORDS.get(city, {}).get("tz", "America/New_York")
     else:
-        tz_str = "America/New_York"
-    local_tz = timezone(tz_str)
-    now_local = datetime.now(local_tz)
-    st.caption(f"Last checked: {now_local.strftime('%Y-%m-%d %H:%M %Z')}")
+        city = "New York"
+    local_now = convert_to_local(utc_now, city)
+    st.caption(f"Last checked: {local_now.strftime('%Y-%m-%d %H:%M %Z')}")
 
-    # Sidebar filters
+    # Sidebar filters for date range and city selection
     default_start = df["date"].min().date()
     default_end = df["date"].max().date()
-    date_range = st.sidebar.date_input("Date range", [default_start, default_end], min_value=default_start, max_value=default_end)
+    date_range = st.sidebar.date_input(
+        "Date range", [default_start, default_end], min_value=default_start, max_value=default_end)
     cities = st.sidebar.multiselect("City", list(CITY_COORDS.keys()), default=list(CITY_COORDS.keys()))
 
-    # Filter data
+    # Filter data based on sidebar selections
     mask = (
         (df["date"] >= pd.to_datetime(date_range[0])) &
         (df["date"] <= pd.to_datetime(date_range[1])) &
@@ -64,18 +95,21 @@ def show_main_dashboard():
     )
     df_filt = df[mask].copy()
 
+    # Show the most recent data date in the filtered set
     st.caption(f"Last updated: {df['date'].max().date()}")
 
     # --- Visualization 1: Geographic Overview ---
     st.subheader("1. Geographic Overview")
+    # Find the latest and previous day in the filtered data
     latest_day = df_filt["date"].max()
     prev_day = latest_day - pd.Timedelta(days=1)
+    # Data for today and yesterday for each city
     df_today = df_filt[df_filt["date"].dt.date == latest_day.date()]
     df_yest = df_filt[df_filt["date"].dt.date == prev_day.date()]
     map_data = []
     for city in cities:
         city_data = df_filt[df_filt["city"] == city].sort_values("date")
-        # Find the most recent day with energy data
+        # Find the most recent day with energy data for this city
         city_data_nonan = city_data.dropna(subset=["energy_mwh"])
         if city_data_nonan.empty:
             temp = energy = energy_yest = pct_change = None
@@ -96,7 +130,7 @@ def show_main_dashboard():
             pct_change = None
             if energy is not None and energy_yest is not None and energy_yest != 0:
                 pct_change = 100 * (energy - energy_yest) / energy_yest
-        # Color logic
+        # Color logic for map marker
         if energy is None or energy_yest is None:
             color = "gray"
         elif energy > energy_yest:
@@ -113,7 +147,9 @@ def show_main_dashboard():
             "color": color,
             "Day Used": str(day_used.date()) if day_used is not None else "N/A"
         })
+    # Create DataFrame for map
     map_df = pd.DataFrame(map_data)
+    # Plot interactive map with Plotly
     fig = px.scatter_mapbox(
         map_df,
         lat="lat",
@@ -143,13 +179,16 @@ def show_main_dashboard():
 
     # --- Visualization 2: Time Series Analysis ---
     st.subheader("2. Time Series Analysis")
+    # City selector for time series
     city_options = ["All Cities"] + cities
     selected_city = st.selectbox("Select city for time series", city_options, index=0)
     df_ts = df_filt.copy()
     if selected_city != "All Cities":
         df_ts = df_ts[df_ts["city"] == selected_city]
+    # Helper to shade weekends
     def is_weekend(dt):
         return dt.weekday() >= 5
+    # Create dual-axis line chart
     fig_ts = go.Figure()
     fig_ts.add_trace(go.Scatter(
         x=df_ts["date"], y=df_ts["tmax_f"], name="Max Temp (°F)", yaxis="y1", mode="lines", line=dict(color="royalblue")
@@ -157,6 +196,7 @@ def show_main_dashboard():
     fig_ts.add_trace(go.Scatter(
         x=df_ts["date"], y=df_ts["energy_mwh"], name="Energy (MWh)", yaxis="y2", mode="lines", line=dict(color="firebrick", dash="dot")
     ))
+    # Shade weekends
     for d in df_ts["date"].dt.date.unique():
         if is_weekend(pd.Timestamp(d)):
             fig_ts.add_vrect(x0=d, x1=d + pd.Timedelta(days=1), fillcolor="lightgray", opacity=0.2, line_width=0)
@@ -171,6 +211,7 @@ def show_main_dashboard():
 
     # --- Visualization 3: Correlation Analysis ---
     st.subheader("3. Correlation Analysis")
+    # Remove rows with missing values for correlation
     corr_df = df_filt.dropna(subset=["tmax_f", "energy_mwh"])
     if not corr_df.empty:
         X = corr_df[["tmax_f"]].values
@@ -180,6 +221,7 @@ def show_main_dashboard():
         r2 = reg.score(X, y)
         corr_coef = np.corrcoef(corr_df["tmax_f"], corr_df["energy_mwh"])[0,1]
         eqn = f"y = {reg.coef_[0]:.2f}x + {reg.intercept_:.2f}"
+        # Scatter plot with regression line and equation
         fig_corr = px.scatter(
             corr_df, x="tmax_f", y="energy_mwh", color="city",
             hover_data=["date"],
@@ -200,18 +242,22 @@ def show_main_dashboard():
 
     # --- Visualization 4: Usage Patterns Heatmap ---
     st.subheader("4. Usage Patterns Heatmap")
+    # Bin temperature ranges for heatmap rows
     bins = [-100, 50, 60, 70, 80, 90, 1000]
     labels = ["<50°F", "50-60°F", "60-70°F", "70-80°F", "80-90°F", ">90°F"]
     df_filt["temp_bin"] = pd.cut(df_filt["tmax_f"], bins=bins, labels=labels)
     df_filt["day_of_week"] = df_filt["date"].dt.day_name()
+    # City filter for heatmap
     city_heat = st.selectbox("Filter city for heatmap", ["All Cities"] + cities, key="heatmap_city")
     if city_heat != "All Cities":
         df_heat = df_filt[df_filt["city"] == city_heat]
     else:
         df_heat = df_filt.copy()
+    # Pivot table for heatmap: average energy by temp bin and day of week
     heatmap_data = df_heat.groupby(["temp_bin", "day_of_week"], observed=False)['energy_mwh'].mean().unstack().reindex(index=labels)
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     heatmap_data = heatmap_data.reindex(columns=days, fill_value=0)
+    # Plot heatmap with annotations
     fig_heat = go.Figure(data=go.Heatmap(
         z=heatmap_data.values,
         x=heatmap_data.columns,
@@ -238,8 +284,11 @@ def show_main_dashboard():
     )
     st.plotly_chart(fig_heat, use_container_width=True)
 
+# Data quality dashboard page: shows data quality metrics and trends
+# ------------------------------------------------------------------
 def show_data_quality_dashboard():
     st.title("Energy Data Quality Monitoring")
+    # Find all quality report JSON files
     report_files = glob.glob("reports/quality_*.json")
     reports = []
     for file in report_files:
@@ -261,6 +310,7 @@ def show_data_quality_dashboard():
     df_reports = pd.DataFrame(reports)
     df_reports['date'] = pd.to_datetime(df_reports['date'])
     latest = df_reports.iloc[-1]
+    # Show summary metrics for latest report
     st.subheader("Latest Report Summary")
     col1, col2, col3 = st.columns(3)
     col1.metric("Missing Values", f"{latest['missing_tmax'] + latest['missing_tmin'] + latest['missing_energy']}")
@@ -268,6 +318,7 @@ def show_data_quality_dashboard():
     col3.metric("Data Freshness", 
                 "Stale" if latest['stale_data'] else "Fresh",
                 f"{latest['days_since_update']} days since update")
+    # Show trends over time
     st.subheader("Data Quality Over Time")
     tab1, tab2, tab3 = st.tabs(["Missing Values", "Outliers", "Freshness"])
     with tab1:
@@ -284,6 +335,7 @@ def show_data_quality_dashboard():
         fig_freshness.update_traces(marker_color=df_reports['days_since_update'].apply(
             lambda x: 'red' if x > 2 else 'orange' if x > 1 else 'green'))
         st.plotly_chart(fig_freshness, use_container_width=True)
+    # Documentation for business users
     st.subheader("Quality Check Documentation")
     expander = st.expander("Understanding Data Quality Metrics")
     with expander:
@@ -308,6 +360,7 @@ def show_data_quality_dashboard():
         *Why it matters*: Ensures complete geographic coverage.  
         *Check*: Confirms all 5 cities are present with no duplicates.
         """)
+    # Show detailed findings from the latest report
     st.subheader("Latest Detailed Findings")
     if report_files:
         with open(report_files[-1]) as f:
@@ -329,6 +382,7 @@ def show_data_quality_dashboard():
                 st.success("No missing energy data")
 
 # --- Sidebar Navigation ---
+# Choose which dashboard page to show
 st.set_page_config(page_title="Energy & Weather Dashboard", layout="wide")
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Main Dashboard", "Data Quality"])
