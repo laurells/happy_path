@@ -7,7 +7,7 @@ import glob
 import os
 import json
 from sklearn.linear_model import LinearRegression
-from datetime import date, timedelta, datetime
+from datetime import date, timedelta, datetime, UTC
 # from pytz import timezone  # Deprecated: use zoneinfo instead
 from zoneinfo import ZoneInfo  # Modern timezone handling
 
@@ -61,18 +61,8 @@ def show_main_dashboard():
         st.stop()
 
     # --- Timezone handling for 'last checked' ---
-    # Old approach (pytz):
-    # if len(df["city"].unique()) == 1:
-    #     city = df["city"].unique()[0]
-    #     tz_str = CITY_COORDS.get(city, {}).get("tz", "America/New_York")
-    # else:
-    #     tz_str = "America/New_York"
-    # local_tz = timezone(tz_str)
-    # now_local = datetime.now(local_tz)
-    # st.caption(f"Last checked: {now_local.strftime('%Y-%m-%d %H:%M %Z')}")
-
-    # New approach (zoneinfo): always show local time for selected city (or NY default)
-    utc_now = datetime.utcnow().replace(tzinfo=ZoneInfo("UTC"))
+    # Use timezone-aware UTC datetime (Python 3.11+)
+    utc_now = datetime.now(UTC)
     if len(df["city"].unique()) == 1:
         city = df["city"].unique()[0]
     else:
@@ -149,8 +139,8 @@ def show_main_dashboard():
         })
     # Create DataFrame for map
     map_df = pd.DataFrame(map_data)
-    # Plot interactive map with Plotly
-    fig = px.scatter_mapbox(
+    # Plot interactive map with Plotly (use scatter_map instead of deprecated scatter_mapbox)
+    fig = px.scatter_map(
         map_df,
         lat="lat",
         lon="lon",

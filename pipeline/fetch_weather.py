@@ -77,7 +77,7 @@ def fetch_weather_data(city_config: Dict, start_date: str, end_date: str, api_to
     # Try backup GHCND file
     try:
         # Download the latest GHCND daily file (compressed)
-        ghcnd_url = "https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd_all.tar.gz"
+        ghcnd_url = "https://ncdc.noaa.gov/pub/data/ghcn/daily/ghcnd_all.tar.gz"
         local_tar = "data/ghcnd_all.tar.gz"
         local_txt = f"data/{city_config['noaa_station_id'].replace(':','_')}.dly"
         # Download tar.gz if not already present or older than 1 day
@@ -97,7 +97,7 @@ def fetch_weather_data(city_config: Dict, start_date: str, end_date: str, api_to
                 return []
         # Parse the .dly file for TMAX and TMIN
         def parse_ghcnd_dly(filepath, start_date, end_date):
-            # GHCND .dly format: https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/readme.txt
+            # GHCND .dly format: https://ncdc.noaa.gov/pub/data/ghcn/daily/readme.txt
             records = []
             with open(filepath, 'r') as f:
                 for line in f:
