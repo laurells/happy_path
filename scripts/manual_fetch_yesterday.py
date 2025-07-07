@@ -11,8 +11,8 @@ city = config['cities'][0]  # Just the first city
 
 yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
 
-noaa_token = "VnnwQxuubJrkxqtNGTAmKWHxplJwTAZU"
-eia_api_key = "SbmgOqeAknBlODMQVHr3GUGchFQw8z393MkRIz95"
+noaa_token = ""
+eia_api_key = ""
 
 if not noaa_token or not eia_api_key:
     print("Please set NOAA_API_TOKEN and EIA_API_KEY environment variables.")
