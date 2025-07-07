@@ -61,6 +61,8 @@ pip install -r requirements.txt
 ### 4. Edit `config/cities.yaml` if you want to add/remove cities.
 
 ## Running the Pipeline
+
+### Manual Execution
 - **Daily fetch:**
   ```
   python scripts/run_daily_pipeline.py
@@ -69,6 +71,60 @@ pip install -r requirements.txt
   ```
   python scripts/fetch_historical.py
   ```
+- **Custom date range:**
+  ```
+  python scripts/run_daily_pipeline.py --start-date 2024-01-01 --end-date 2024-01-31
+  ```
+
+### Automated Execution (Windows)
+
+#### Option 1: PowerShell Setup (Recommended)
+```powershell
+# Run as Administrator for system-wide task
+.\scripts\setup_automation.ps1 -RunAsAdmin
+
+# Or run as current user
+.\scripts\setup_automation.ps1
+
+# Custom schedule (e.g., 8 AM daily)
+.\scripts\setup_automation.ps1 -Time "08:00"
+
+# Remove existing task and recreate
+.\scripts\setup_automation.ps1 -RemoveExisting
+```
+
+#### Option 2: Batch Script Setup
+```cmd
+# Run as Administrator
+.\scripts\setup_automation.bat
+```
+
+#### Monitoring Automation
+```powershell
+# Check pipeline status
+.\scripts\monitor_pipeline.ps1
+
+# Check with detailed logs
+.\scripts\monitor_pipeline.ps1 -ShowLogs
+
+# Check Task Scheduler status
+.\scripts\monitor_pipeline.ps1 -CheckTaskStatus
+```
+
+#### Managing the Automated Task
+```powershell
+# View task status
+Get-ScheduledTask -TaskName "EnergyWeatherPipeline"
+
+# Run task immediately
+Start-ScheduledTask -TaskName "EnergyWeatherPipeline"
+
+# Delete task
+Unregister-ScheduledTask -TaskName "EnergyWeatherPipeline"
+
+# View recent logs
+Get-Content logs\pipeline_*.log | Select-Object -Last 50
+```
 
 ### Production Features
 - **Automated Data Fetching:**
@@ -83,6 +139,11 @@ pip install -r requirements.txt
   - Checks for missing values, outliers (e.g., negative energy, implausible temps), data freshness, and duplicates
   - Generates both JSON (`reports/quality_*.json`) and human-readable TXT reports
   - Outliers and missing values are filtered in the dashboard visualizations
+- **Automation & Monitoring:**
+  - Windows Task Scheduler integration for daily automated runs
+  - Comprehensive logging with timestamps and exit codes
+  - Monitoring scripts to check pipeline status and data freshness
+  - Configurable schedules and error handling for production environments
 
 ## Streamlit Dashboard
 - **Run the dashboard:**

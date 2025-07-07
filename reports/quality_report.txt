@@ -1,0 +1,70 @@
+Data Quality Report - 2025-07-07
+==================================================
+
+Missing Values Analysis:
+------------------------------
+date: 0 missing
+city: 0 missing
+station_id: 14 missing
+tmax_f: 14 missing
+tmin_f: 14 missing
+has_both_temps: 14 missing
+energy_mwh: 0 missing
+region_code: 0 missing
+timezone: 0 missing
+data_source: 0 missing
+has_weather: 0 missing
+has_energy: 0 missing
+complete_record: 0 missing
+
+Outlier Detection:
+------------------------------
+Temperature Outliers: 0
+Energy Outliers: 0
+
+Data Freshness:
+------------------------------
+Latest Data Date: 2025-07-06
+Current Date: 2025-07-07
+Stale Data: NO
+Days Since Update: 1
+
+Data Consistency:
+------------------------------
+Duplicate Records: 0
+Date Range: 2025-04-06 to 2025-07-06
+
+Detailed Findings:
+------------------------------
+
+Missing Tmax F:
+  - 2025-07-03 00:00:00 | Chicago
+  - 2025-07-04 00:00:00 | Chicago
+  - 2025-07-05 00:00:00 | Chicago
+  - 2025-07-06 00:00:00 | Chicago
+  - 2025-07-05 00:00:00 | Houston
+  - 2025-07-06 00:00:00 | Houston
+  - 2025-07-03 00:00:00 | New York
+  - 2025-07-04 00:00:00 | New York
+  - 2025-07-05 00:00:00 | New York
+  - 2025-07-06 00:00:00 | New York
+  - 2025-07-05 00:00:00 | Phoenix
+  - 2025-07-06 00:00:00 | Phoenix
+  - 2025-07-05 00:00:00 | Seattle
+  - 2025-07-06 00:00:00 | Seattle
+
+Missing Tmin F:
+  - 2025-07-03 00:00:00 | Chicago
+  - 2025-07-04 00:00:00 | Chicago
+  - 2025-07-05 00:00:00 | Chicago
+  - 2025-07-06 00:00:00 | Chicago
+  - 2025-07-05 00:00:00 | Houston
+  - 2025-07-06 00:00:00 | Houston
+  - 2025-07-03 00:00:00 | New York
+  - 2025-07-04 00:00:00 | New York
+  - 2025-07-05 00:00:00 | New York
+  - 2025-07-06 00:00:00 | New York
+  - 2025-07-05 00:00:00 | Phoenix
+  - 2025-07-06 00:00:00 | Phoenix
+  - 2025-07-05 00:00:00 | Seattle
+  - 2025-07-06 00:00:00 | Seattle

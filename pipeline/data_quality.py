@@ -2,6 +2,7 @@ import pandas as pd
 import logging
 from datetime import datetime, timedelta
 import os
+import yaml
 
 """
 Module for data quality checks and reporting.
@@ -18,6 +19,10 @@ def run_data_quality_checks(data: pd.DataFrame, report_date: str) -> dict:
       - Data freshness
       - Data consistency (duplicates, date range, missing cities)
     """
+    # Ensure all expected columns exist
+    for col in ['energy_mwh', 'tmax_f', 'tmin_f']:
+        if col not in data.columns:
+            data[col] = None
     # Ensure numeric types for checks
     data['energy_mwh'] = pd.to_numeric(data['energy_mwh'], errors='coerce')
     data['tmax_f'] = pd.to_numeric(data['tmax_f'], errors='coerce')
@@ -138,5 +143,15 @@ def generate_quality_report(report: dict, output_path: str):
                 for record in records:
                     f.write(f"  - {record['date']} | {record['city']}\n")
 
-# City reference
-CITY_NAMES = ["New York", "Chicago", "Houston", "Phoenix", "Seattle"]
+def get_city_names():
+    """Load city names from config file to avoid hardcoding."""
+    try:
+        with open('config/cities.yaml', 'r') as f:
+            config = yaml.safe_load(f)
+        return [city['name'] for city in config['cities']]
+    except Exception as e:
+        logging.warning(f"Could not load cities from config, using default: {e}")
+        return ["New York", "Chicago", "Houston", "Phoenix", "Seattle"]
+
+# City reference - loaded from config/cities.yaml
+CITY_NAMES = get_city_names()
