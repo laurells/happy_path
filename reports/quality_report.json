@@ -1,13 +1,13 @@
 {
-  "run_date": "2025-07-07",
+  "run_date": "2025-07-17",
   "missing_values": {
     "summary": {
       "date": 0,
       "city": 0,
-      "station_id": 14,
-      "tmax_f": 14,
-      "tmin_f": 14,
-      "has_both_temps": 14,
+      "station_id": 15,
+      "tmax_f": 15,
+      "tmin_f": 15,
+      "has_both_temps": 15,
       "energy_mwh": 0,
       "region_code": 0,
       "timezone": 0,
@@ -28,152 +28,162 @@
     }
   },
   "freshness": {
-    "latest_data_date": "2025-07-06",
-    "current_date": "2025-07-07",
+    "latest_data_date": "2025-07-16",
+    "current_date": "2025-07-17",
     "is_stale": false,
     "days_since_update": 1
   },
   "details": {
     "missing_tmax_f": [
       {
-        "date": "2025-07-03 00:00:00",
+        "date": "2025-07-14 00:00:00",
         "city": "Chicago",
         "tmax_f": null
       },
       {
-        "date": "2025-07-04 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "Chicago",
         "tmax_f": null
       },
       {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-16 00:00:00",
         "city": "Chicago",
         "tmax_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
-        "city": "Chicago",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-14 00:00:00",
         "city": "Houston",
         "tmax_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "Houston",
         "tmax_f": null
       },
       {
-        "date": "2025-07-03 00:00:00",
+        "date": "2025-07-16 00:00:00",
+        "city": "Houston",
+        "tmax_f": null
+      },
+      {
+        "date": "2025-07-14 00:00:00",
         "city": "New York",
         "tmax_f": null
       },
       {
-        "date": "2025-07-04 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "New York",
         "tmax_f": null
       },
       {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-16 00:00:00",
         "city": "New York",
         "tmax_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
-        "city": "New York",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-14 00:00:00",
         "city": "Phoenix",
         "tmax_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "Phoenix",
         "tmax_f": null
       },
       {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-16 00:00:00",
+        "city": "Phoenix",
+        "tmax_f": null
+      },
+      {
+        "date": "2025-07-14 00:00:00",
         "city": "Seattle",
         "tmax_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
+        "date": "2025-07-15 00:00:00",
+        "city": "Seattle",
+        "tmax_f": null
+      },
+      {
+        "date": "2025-07-16 00:00:00",
         "city": "Seattle",
         "tmax_f": null
       }
     ],
     "missing_tmin_f": [
       {
-        "date": "2025-07-03 00:00:00",
+        "date": "2025-07-14 00:00:00",
         "city": "Chicago",
         "tmin_f": null
       },
       {
-        "date": "2025-07-04 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "Chicago",
         "tmin_f": null
       },
       {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-16 00:00:00",
         "city": "Chicago",
         "tmin_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
-        "city": "Chicago",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-14 00:00:00",
         "city": "Houston",
         "tmin_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "Houston",
         "tmin_f": null
       },
       {
-        "date": "2025-07-03 00:00:00",
+        "date": "2025-07-16 00:00:00",
+        "city": "Houston",
+        "tmin_f": null
+      },
+      {
+        "date": "2025-07-14 00:00:00",
         "city": "New York",
         "tmin_f": null
       },
       {
-        "date": "2025-07-04 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "New York",
         "tmin_f": null
       },
       {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-16 00:00:00",
         "city": "New York",
         "tmin_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
-        "city": "New York",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-14 00:00:00",
         "city": "Phoenix",
         "tmin_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
+        "date": "2025-07-15 00:00:00",
         "city": "Phoenix",
         "tmin_f": null
       },
       {
-        "date": "2025-07-05 00:00:00",
+        "date": "2025-07-16 00:00:00",
+        "city": "Phoenix",
+        "tmin_f": null
+      },
+      {
+        "date": "2025-07-14 00:00:00",
         "city": "Seattle",
         "tmin_f": null
       },
       {
-        "date": "2025-07-06 00:00:00",
+        "date": "2025-07-15 00:00:00",
+        "city": "Seattle",
+        "tmin_f": null
+      },
+      {
+        "date": "2025-07-16 00:00:00",
         "city": "Seattle",
         "tmin_f": null
       }
@@ -184,21 +194,21 @@
     "duplicates": "0",
     "date_range": {
       "start": "2025-04-06",
-      "end": "2025-07-06"
+      "end": "2025-07-16"
     },
     "cities_missing": []
   },
   "pipeline_stats": {
     "cities_processed": 5,
-    "weather_records": 431,
+    "weather_records": 430,
     "energy_records": 445,
     "validation_failures": [],
     "processing_errors": [],
-    "final_record_count": 460,
+    "final_record_count": 510,
     "cities_with_data": 5,
     "date_range": {
       "start": "2025-04-06 00:00:00",
-      "end": "2025-07-06 00:00:00"
+      "end": "2025-07-16 00:00:00"
     }
   }
 }

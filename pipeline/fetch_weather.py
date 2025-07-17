@@ -3,6 +3,7 @@ import logging
 import os
 import pandas as pd
 import gzip
+import tarfile
 from typing import List, Dict
 from datetime import datetime, timedelta
 import time
@@ -53,7 +54,13 @@ def fetch_weather_data(city_config: Dict, start_date: str, end_date: str, api_to
                 continue
             response.raise_for_status()
             
-            data = response.json().get("results", [])
+            response_json = response.json()
+            if isinstance(response_json, dict):
+                data = response_json.get("results", [])
+            elif isinstance(response_json, list):
+                data = response_json
+            else:
+                data = []
             
             # Validate that we got data for the correct station
             if data:
@@ -146,7 +153,6 @@ def fetch_weather_data(city_config: Dict, start_date: str, end_date: str, api_to
                 f.write(r.content)
         
         # Extract the station file from the tar.gz
-        import tarfile
         with tarfile.open(local_tar, 'r:gz') as tar:
             member_name = station_id_clean + '.dly'
             try:

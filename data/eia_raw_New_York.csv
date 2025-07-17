@@ -1,204 +1,4 @@
 period,respondent,respondent-name,type,type-name,timezone,timezone-description,value,value-units
-2025-04-09,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,378493,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,D,Demand,Central,Central,379571,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,380058,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,379039,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,378493,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,373184,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,373841,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,374131,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,373521,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,373184,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,331699,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,333827,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,335166,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,332716,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,331699,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-46794,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-45744,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-44892,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-46323,megawatthours
-2025-04-09,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-46794,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,390853,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,D,Demand,Central,Central,391543,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,391883,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,391218,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,390853,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,384566,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,385412,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,385788,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,385005,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,384566,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,340920,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,339916,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,339783,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,340235,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,340920,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-49933,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-51627,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-52100,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-50983,megawatthours
-2025-04-10,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-49933,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,392043,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,D,Demand,Central,Central,391881,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,391914,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,391944,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,392043,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,378646,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,379131,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,379390,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,378893,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,378646,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,341290,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,343512,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,344693,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,342480,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,341290,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-50753,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-48369,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-47221,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-49464,megawatthours
-2025-04-11,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-50753,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,381141,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,D,Demand,Central,Central,381244,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,381150,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,381226,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,381141,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,359031,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,358675,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,358453,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,358872,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,359031,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,313656,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,313205,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,312541,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,313553,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,313656,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-67485,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-68039,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-68609,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-67673,megawatthours
-2025-04-12,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-67485,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,339094,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,D,Demand,Central,Central,340668,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,341598,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,339833,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,339094,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,338495,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,339745,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,340512,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,339059,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,338495,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,289152,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,291210,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,292365,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,290001,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,289152,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-49942,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-49458,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-49233,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-49832,megawatthours
-2025-04-13,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-49942,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,352605,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,D,Demand,Central,Central,353278,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,353510,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,352970,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,352605,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,352672,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,353258,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,353449,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,352994,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,352672,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,304962,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,303274,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,302262,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,304168,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,304962,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-47643,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-50004,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-51248,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-48802,megawatthours
-2025-04-14,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-47643,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,359103,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,D,Demand,Central,Central,358038,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,357518,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,358562,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,359103,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,354803,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,354232,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,354041,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,354498,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,354803,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,332484,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,330403,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,329784,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,331330,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,332484,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-26619,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-27635,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-27734,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-27232,megawatthours
-2025-04-15,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-26619,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,383841,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,D,Demand,Central,Central,382836,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,382310,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,383349,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,383841,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,365455,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,364602,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,364123,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,365040,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,365455,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,341234,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,340825,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,340648,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,341176,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,341234,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-42607,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-42011,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-41662,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-42173,megawatthours
-2025-04-16,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-42607,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,345024,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,D,Demand,Central,Central,346226,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,346878,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,345612,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,345024,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,338767,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,339280,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,339500,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,339044,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,338767,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,303405,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,306565,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,307914,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,304864,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,303405,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-41619,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-39661,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-38964,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-40748,megawatthours
-2025-04-17,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-41619,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,342717,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,D,Demand,Central,Central,343932,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,344463,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,343362,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,342717,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,335070,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,336773,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,337593,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,335924,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,335070,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,298622,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,297156,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,296729,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,297992,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,298622,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-44095,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-46776,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-47734,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-45370,megawatthours
-2025-04-18,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-44095,megawatthours
 2025-04-19,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,339863,megawatthours
 2025-04-19,NYIS,New York Independent System Operator,D,Demand,Central,Central,339286,megawatthours
 2025-04-19,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,338963,megawatthours
@@ -1751,10 +1551,195 @@ period,respondent,respondent-name,type,type-name,timezone,timezone-description,v
 2025-07-06,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,473102,megawatthours
 2025-07-06,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,478119,megawatthours
 2025-07-06,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,480586,megawatthours
-2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,423333,megawatthours
-2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,423333,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,428044,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,422234,megawatthours
 2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,419388,megawatthours
-2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,423333,megawatthours
-2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,423333,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,425301,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,428044,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-78057,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-79740,megawatthours
 2025-07-06,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-80621,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-78695,megawatthours
+2025-07-06,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-78057,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,566605,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,D,Demand,Central,Central,566126,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,565879,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,566346,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,566605,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,554499,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,554481,megawatthours
 2025-07-07,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,554391,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,554500,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,554499,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,492541,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,492936,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,492886,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,492705,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,492541,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-74064,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-73190,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-72993,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-73641,megawatthours
+2025-07-07,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-74064,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,572908,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,D,Demand,Central,Central,574024,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,574492,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,573487,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,572908,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,550747,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,551186,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,551338,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,550984,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,550747,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,494462,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,496127,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,497173,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,495286,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,494462,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-78446,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-77897,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-77319,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-78201,megawatthours
+2025-07-08,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-78446,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,557217,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,D,Demand,Central,Central,557004,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,556728,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,557176,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,557217,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,539278,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,539414,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,539479,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,539351,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,539278,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,477311,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,477370,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,476766,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,477290,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,477311,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-79906,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-79634,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-79962,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-79886,megawatthours
+2025-07-09,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-79906,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,527963,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,D,Demand,Central,Central,529670,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,530750,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,528740,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,527963,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,525449,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,526581,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,527219,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,525993,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,525449,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,451705,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,452738,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,453754,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,452239,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,451705,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-76258,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-76932,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-76996,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-76501,megawatthours
+2025-07-10,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-76258,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,535035,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,D,Demand,Central,Central,533986,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,533381,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,534549,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,535035,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,522782,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,522512,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,522329,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,522668,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,522782,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,457870,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,456639,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,456131,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,457090,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,457870,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-77165,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-77347,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-77250,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-77459,megawatthours
+2025-07-11,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-77165,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,514307,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,D,Demand,Central,Central,514433,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,514639,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,514340,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,514307,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,503610,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,503899,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,504109,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,503736,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,503610,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,435885,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,435763,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,435965,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,435787,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,435885,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-78422,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-78670,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-78674,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-78553,megawatthours
+2025-07-12,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-78422,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,511525,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,D,Demand,Central,Central,510696,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,510365,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,511066,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,511525,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,490702,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,490480,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,490550,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,490523,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,490702,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,435085,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,434900,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,434966,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,435060,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,435085,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-76440,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-75796,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-75399,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-76006,megawatthours
+2025-07-13,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-76440,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,553017,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,D,Demand,Central,Central,554125,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,554606,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,553589,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,553017,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,538008,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,537398,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,536941,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,537746,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,538008,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,481534,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,481505,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,480895,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,481587,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,481534,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,TI,Total interchange,Arizona,Arizona,-71483,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,TI,Total interchange,Central,Central,-72620,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-73711,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,TI,Total interchange,Mountain,Mountain,-72002,megawatthours
+2025-07-14,NYIS,New York Independent System Operator,TI,Total interchange,Pacific,Pacific,-71483,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,556763,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,D,Demand,Central,Central,554542,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,553254,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,555733,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,556763,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Arizona,Arizona,543039,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Central,Central,541818,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,541128,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Mountain,Mountain,542450,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Pacific,Pacific,543039,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,NG,Net generation,Arizona,Arizona,495208,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,NG,Net generation,Central,Central,495208,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,NG,Net generation,Eastern,Eastern,492037,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,NG,Net generation,Mountain,Mountain,495208,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,NG,Net generation,Pacific,Pacific,495208,megawatthours
+2025-07-15,NYIS,New York Independent System Operator,TI,Total interchange,Eastern,Eastern,-61217,megawatthours
+2025-07-16,NYIS,New York Independent System Operator,D,Demand,Arizona,Arizona,592140,megawatthours
+2025-07-16,NYIS,New York Independent System Operator,D,Demand,Central,Central,588826,megawatthours
+2025-07-16,NYIS,New York Independent System Operator,D,Demand,Eastern,Eastern,587198,megawatthours
+2025-07-16,NYIS,New York Independent System Operator,D,Demand,Mountain,Mountain,590471,megawatthours
+2025-07-16,NYIS,New York Independent System Operator,D,Demand,Pacific,Pacific,592140,megawatthours
+2025-07-16,NYIS,New York Independent System Operator,DF,Day-ahead demand forecast,Eastern,Eastern,572938,megawatthours

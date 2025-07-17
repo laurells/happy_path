@@ -87,10 +87,20 @@ date,city,station_id,tmax_f,tmin_f,has_both_temps,energy_mwh,region_code,timezon
 2025-06-30,Chicago,GHCND:USW00094846,90.0,73.9,True,2886344.0,PJM,Central,EIA_API,True,True,True
 2025-07-01,Chicago,GHCND:USW00094846,87.1,70.0,True,2805842.0,PJM,Central,EIA_API,True,True,True
 2025-07-02,Chicago,GHCND:USW00094846,91.0,71.1,True,2694601.0,PJM,Central,EIA_API,True,True,True
-2025-07-03,Chicago,,,,,2742029.0,PJM,Central,EIA_API,False,True,False
-2025-07-04,Chicago,,,,,2466866.0,PJM,Central,EIA_API,False,True,False
-2025-07-05,Chicago,,,,,2555141.0,PJM,Central,EIA_API,False,True,False
-2025-07-06,Chicago,,,,,2654878.0,PJM,Central,EIA_API,False,True,False
+2025-07-03,Chicago,GHCND:USW00094846,95.0,72.0,True,2742029.0,PJM,Central,EIA_API,True,True,True
+2025-07-04,Chicago,GHCND:USW00094846,91.9,73.9,True,2466866.0,PJM,Central,EIA_API,True,True,True
+2025-07-05,Chicago,GHCND:USW00094846,93.9,75.9,True,2555141.0,PJM,Central,EIA_API,True,True,True
+2025-07-06,Chicago,GHCND:USW00094846,84.9,66.0,True,2654878.0,PJM,Central,EIA_API,True,True,True
+2025-07-07,Chicago,GHCND:USW00094846,82.9,64.9,True,2875817.0,PJM,Central,EIA_API,True,True,True
+2025-07-08,Chicago,GHCND:USW00094846,84.0,69.1,True,2891638.0,PJM,Central,EIA_API,True,True,True
+2025-07-09,Chicago,GHCND:USW00094846,84.9,69.1,True,2808258.0,PJM,Central,EIA_API,True,True,True
+2025-07-10,Chicago,GHCND:USW00094846,84.9,66.9,True,2733326.0,PJM,Central,EIA_API,True,True,True
+2025-07-11,Chicago,GHCND:USW00094846,90.0,70.0,True,2862443.0,PJM,Central,EIA_API,True,True,True
+2025-07-12,Chicago,GHCND:USW00094846,84.0,69.1,True,2754607.0,PJM,Central,EIA_API,True,True,True
+2025-07-13,Chicago,GHCND:USW00094846,81.0,66.9,True,2668866.0,PJM,Central,EIA_API,True,True,True
+2025-07-14,Chicago,,,,,2839614.0,PJM,Central,EIA_API,False,True,False
+2025-07-15,Chicago,,,,,2871718.0,PJM,Central,EIA_API,False,True,False
+2025-07-16,Chicago,,,,,2954762.0,PJM,Central,EIA_API,False,True,False
 2025-04-06,Houston,GHCND:USW00012960,60.1,48.0,True,1103017.0,ERCO,Central,EIA_API,True,True,True
 2025-04-07,Houston,GHCND:USW00012960,70.0,46.0,True,1101862.0,ERCO,Central,EIA_API,True,True,True
 2025-04-08,Houston,GHCND:USW00012960,77.0,46.0,True,1106234.0,ERCO,Central,EIA_API,True,True,True
@@ -181,8 +191,18 @@ date,city,station_id,tmax_f,tmin_f,has_both_temps,energy_mwh,region_code,timezon
 2025-07-02,Houston,GHCND:USW00012960,96.1,77.0,True,1514389.0,ERCO,Central,EIA_API,True,True,True
 2025-07-03,Houston,GHCND:USW00012960,93.9,75.0,True,1440660.0,ERCO,Central,EIA_API,True,True,True
 2025-07-04,Houston,GHCND:USW00012960,91.0,75.0,True,1393586.0,ERCO,Central,EIA_API,True,True,True
-2025-07-05,Houston,,,,,1379986.0,ERCO,Central,EIA_API,False,True,False
-2025-07-06,Houston,,,,,1407855.0,ERCO,Central,EIA_API,False,True,False
+2025-07-05,Houston,GHCND:USW00012960,93.9,78.1,True,1379986.0,ERCO,Central,EIA_API,True,True,True
+2025-07-06,Houston,GHCND:USW00012960,96.1,75.9,True,1407855.0,ERCO,Central,EIA_API,True,True,True
+2025-07-07,Houston,GHCND:USW00012960,95.0,78.1,True,1502122.0,ERCO,Central,EIA_API,True,True,True
+2025-07-08,Houston,GHCND:USW00012960,91.0,73.0,True,1491609.0,ERCO,Central,EIA_API,True,True,True
+2025-07-09,Houston,GHCND:USW00012960,91.0,73.0,True,1469181.0,ERCO,Central,EIA_API,True,True,True
+2025-07-10,Houston,GHCND:USW00012960,95.0,78.1,True,1523856.0,ERCO,Central,EIA_API,True,True,True
+2025-07-11,Houston,GHCND:USW00012960,93.0,79.0,True,1543816.0,ERCO,Central,EIA_API,True,True,True
+2025-07-12,Houston,GHCND:USW00012960,95.0,79.0,True,1497970.0,ERCO,Central,EIA_API,True,True,True
+2025-07-13,Houston,GHCND:USW00012960,95.0,75.9,True,1428407.0,ERCO,Central,EIA_API,True,True,True
+2025-07-14,Houston,,,,,1504071.0,ERCO,Central,EIA_API,False,True,False
+2025-07-15,Houston,,,,,1572957.0,ERCO,Central,EIA_API,False,True,False
+2025-07-16,Houston,,,,,1608029.0,ERCO,Central,EIA_API,False,True,False
 2025-04-06,New York,GHCND:USW00094728,55.9,43.0,True,347576.0,NYIS,Eastern,EIA_API,True,True,True
 2025-04-07,New York,GHCND:USW00094728,50.0,39.0,True,383201.0,NYIS,Eastern,EIA_API,True,True,True
 2025-04-08,New York,GHCND:USW00094728,45.0,35.1,True,390632.0,NYIS,Eastern,EIA_API,True,True,True
@@ -271,10 +291,20 @@ date,city,station_id,tmax_f,tmin_f,has_both_temps,energy_mwh,region_code,timezon
 2025-06-30,New York,GHCND:USW00094728,90.0,71.1,True,532117.0,NYIS,Eastern,EIA_API,True,True,True
 2025-07-01,New York,GHCND:USW00094728,89.1,72.0,True,553433.0,NYIS,Eastern,EIA_API,True,True,True
 2025-07-02,New York,GHCND:USW00094728,84.0,71.1,True,510732.0,NYIS,Eastern,EIA_API,True,True,True
-2025-07-03,New York,,,,,494340.0,NYIS,Eastern,EIA_API,False,True,False
-2025-07-04,New York,,,,,412395.0,NYIS,Eastern,EIA_API,False,True,False
-2025-07-05,New York,,,,,439855.0,NYIS,Eastern,EIA_API,False,True,False
-2025-07-06,New York,,,,,500009.0,NYIS,Eastern,EIA_API,False,True,False
+2025-07-03,New York,GHCND:USW00094728,88.0,69.1,True,494340.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-04,New York,GHCND:USW00094728,82.9,66.9,True,412395.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-05,New York,GHCND:USW00094728,84.0,68.0,True,439855.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-06,New York,GHCND:USW00094728,87.1,72.0,True,500009.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-07,New York,GHCND:USW00094728,87.1,75.9,True,565879.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-08,New York,GHCND:USW00094728,93.0,73.0,True,574492.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-09,New York,GHCND:USW00094728,90.0,73.0,True,556728.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-10,New York,GHCND:USW00094728,84.0,70.0,True,530750.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-11,New York,GHCND:USW00094728,84.0,73.0,True,533381.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-12,New York,GHCND:USW00094728,82.9,73.9,True,514639.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-13,New York,GHCND:USW00094728,82.9,71.1,True,510365.0,NYIS,Eastern,EIA_API,True,True,True
+2025-07-14,New York,,,,,554606.0,NYIS,Eastern,EIA_API,False,True,False
+2025-07-15,New York,,,,,553254.0,NYIS,Eastern,EIA_API,False,True,False
+2025-07-16,New York,,,,,587198.0,NYIS,Eastern,EIA_API,False,True,False
 2025-04-06,Phoenix,GHCND:USW00023183,81.0,57.9,True,73388.0,AZPS,Mountain,EIA_API,True,True,True
 2025-04-07,Phoenix,GHCND:USW00023183,88.0,57.9,True,76997.0,AZPS,Mountain,EIA_API,True,True,True
 2025-04-08,Phoenix,GHCND:USW00023183,93.9,63.0,True,85103.0,AZPS,Mountain,EIA_API,True,True,True
@@ -365,8 +395,18 @@ date,city,station_id,tmax_f,tmin_f,has_both_temps,energy_mwh,region_code,timezon
 2025-07-02,Phoenix,GHCND:USW00023183,109.0,78.1,True,145540.0,AZPS,Mountain,EIA_API,True,True,True
 2025-07-03,Phoenix,GHCND:USW00023183,102.0,78.1,True,126764.0,AZPS,Mountain,EIA_API,True,True,True
 2025-07-04,Phoenix,GHCND:USW00023183,102.9,82.0,True,124061.0,AZPS,Mountain,EIA_API,True,True,True
-2025-07-05,Phoenix,,,,,130111.0,AZPS,Mountain,EIA_API,False,True,False
-2025-07-06,Phoenix,,,,,136053.0,AZPS,Mountain,EIA_API,False,True,False
+2025-07-05,Phoenix,GHCND:USW00023183,107.1,86.0,True,130111.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-06,Phoenix,GHCND:USW00023183,109.9,86.0,True,136053.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-07,Phoenix,GHCND:USW00023183,111.0,91.0,True,146592.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-08,Phoenix,GHCND:USW00023183,111.9,91.9,True,153810.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-09,Phoenix,GHCND:USW00023183,118.0,93.0,True,160227.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-10,Phoenix,GHCND:USW00023183,113.0,95.0,True,157580.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-11,Phoenix,GHCND:USW00023183,111.0,90.0,True,154542.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-12,Phoenix,GHCND:USW00023183,108.0,88.0,True,143849.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-13,Phoenix,GHCND:USW00023183,108.0,90.0,True,138566.0,AZPS,Mountain,EIA_API,True,True,True
+2025-07-14,Phoenix,,,,,144528.0,AZPS,Mountain,EIA_API,False,True,False
+2025-07-15,Phoenix,,,,,145055.0,AZPS,Mountain,EIA_API,False,True,False
+2025-07-16,Phoenix,,,,,143392.0,AZPS,Mountain,EIA_API,False,True,False
 2025-04-06,Seattle,GHCND:USW00024233,57.0,48.0,True,23678.0,SCL,Pacific,EIA_API,True,True,True
 2025-04-07,Seattle,GHCND:USW00024233,57.9,45.0,True,25845.0,SCL,Pacific,EIA_API,True,True,True
 2025-04-08,Seattle,GHCND:USW00024233,55.9,45.0,True,26880.0,SCL,Pacific,EIA_API,True,True,True
@@ -457,5 +497,15 @@ date,city,station_id,tmax_f,tmin_f,has_both_temps,energy_mwh,region_code,timezon
 2025-07-02,Seattle,GHCND:USW00024233,75.0,54.0,True,23727.0,SCL,Pacific,EIA_API,True,True,True
 2025-07-03,Seattle,GHCND:USW00024233,69.1,53.1,True,21534.0,SCL,Pacific,EIA_API,True,True,True
 2025-07-04,Seattle,GHCND:USW00024233,73.9,55.0,True,20871.0,SCL,Pacific,EIA_API,True,True,True
-2025-07-05,Seattle,,,,,21301.0,SCL,Pacific,EIA_API,False,True,False
-2025-07-06,Seattle,,,,,21980.0,SCL,Pacific,EIA_API,False,True,False
+2025-07-05,Seattle,GHCND:USW00024233,75.0,53.1,True,21301.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-06,Seattle,GHCND:USW00024233,79.0,57.0,True,21980.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-07,Seattle,GHCND:USW00024233,84.9,57.9,True,25144.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-08,Seattle,GHCND:USW00024233,84.9,57.9,True,25706.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-09,Seattle,GHCND:USW00024233,72.0,59.0,True,23118.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-10,Seattle,GHCND:USW00024233,73.0,57.0,True,22212.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-11,Seattle,GHCND:USW00024233,84.0,59.0,True,23941.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-12,Seattle,GHCND:USW00024233,82.9,64.0,True,24080.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-13,Seattle,GHCND:USW00024233,90.0,64.0,True,24864.0,SCL,Pacific,EIA_API,True,True,True
+2025-07-14,Seattle,,,,,25822.0,SCL,Pacific,EIA_API,False,True,False
+2025-07-15,Seattle,,,,,26321.0,SCL,Pacific,EIA_API,False,True,False
+2025-07-16,Seattle,,,,,27098.0,SCL,Pacific,EIA_API,False,True,False
