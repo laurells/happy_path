@@ -1223,7 +1223,7 @@ def show_main_dashboard():
                         # Use the actual min/max for better contrast calculation
                         val_range = np.nanmax(heatmap_data.values) - np.nanmin(heatmap_data.values)
                         val_normalized = (val - np.nanmin(heatmap_data.values)) / val_range if val_range > 0 else 0
-                        text_color = "white" if val_normalized > 0.5 else "black"
+                        text_color = "white" if val_normalized > 0.7 else "black"
                         
                         fig_heat.add_annotation(
                             x=j,  # Use index instead of label for better positioning
