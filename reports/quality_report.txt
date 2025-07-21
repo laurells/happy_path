@@ -1,72 +1,97 @@
-Data Quality Report - 2025-07-17
-==================================================
+COMPREHENSIVE DATA QUALITY REPORT
+Generated: 2025-07-21
+============================================================
 
-Missing Values Analysis:
+EXECUTIVE SUMMARY
 ------------------------------
-date: 0 missing
-city: 0 missing
-station_id: 15 missing
-tmax_f: 15 missing
-tmin_f: 15 missing
-has_both_temps: 15 missing
-energy_mwh: 0 missing
-region_code: 0 missing
-timezone: 0 missing
-data_source: 0 missing
-has_weather: 0 missing
-has_energy: 0 missing
-complete_record: 0 missing
+Overall Quality Score: 75.0/100
+Total Records Analyzed: 445
+Date Range: 2025-04-23 to 2025-07-20
+Cities Covered: 5
 
-Outlier Detection:
+ISSUE SUMMARY
 ------------------------------
-Temperature Outliers: 0
-Energy Outliers: 0
+Critical Issues: 0
+High Priority: 0
+Medium Priority: 0
+Low Priority: 9
 
-Data Freshness:
-------------------------------
-Latest Data Date: 2025-07-16
-Current Date: 2025-07-17
-Stale Data: NO
-Days Since Update: 1
-
-Data Consistency:
-------------------------------
-Duplicate Records: 0
-Date Range: 2025-04-06 to 2025-07-16
-
-Detailed Findings:
+DETAILED FINDINGS
 ------------------------------
 
-Missing Tmax F:
-  - 2025-07-14 00:00:00 | Chicago
-  - 2025-07-15 00:00:00 | Chicago
-  - 2025-07-16 00:00:00 | Chicago
-  - 2025-07-14 00:00:00 | Houston
-  - 2025-07-15 00:00:00 | Houston
-  - 2025-07-16 00:00:00 | Houston
-  - 2025-07-14 00:00:00 | New York
-  - 2025-07-15 00:00:00 | New York
-  - 2025-07-16 00:00:00 | New York
-  - 2025-07-14 00:00:00 | Phoenix
-  - 2025-07-15 00:00:00 | Phoenix
-  - 2025-07-16 00:00:00 | Phoenix
-  - 2025-07-14 00:00:00 | Seattle
-  - 2025-07-15 00:00:00 | Seattle
-  - 2025-07-16 00:00:00 | Seattle
+MISSING TMAX_F
+   Severity: Low
+   Count: 10
+   Percentage: 2.25%
+   Description: 10 missing values (2.25%) in tmax_f
+   Recommendation: Acceptable: tmax_f missing data within normal range.
+   Sample Records:
+     1. date: 2025-07-19 00:00:00 | city: Chicago | tmax_f: nan
+     2. date: 2025-07-20 00:00:00 | city: Chicago | tmax_f: nan
+     3. date: 2025-07-19 00:00:00 | city: Houston | tmax_f: nan
 
-Missing Tmin F:
-  - 2025-07-14 00:00:00 | Chicago
-  - 2025-07-15 00:00:00 | Chicago
-  - 2025-07-16 00:00:00 | Chicago
-  - 2025-07-14 00:00:00 | Houston
-  - 2025-07-15 00:00:00 | Houston
-  - 2025-07-16 00:00:00 | Houston
-  - 2025-07-14 00:00:00 | New York
-  - 2025-07-15 00:00:00 | New York
-  - 2025-07-16 00:00:00 | New York
-  - 2025-07-14 00:00:00 | Phoenix
-  - 2025-07-15 00:00:00 | Phoenix
-  - 2025-07-16 00:00:00 | Phoenix
-  - 2025-07-14 00:00:00 | Seattle
-  - 2025-07-15 00:00:00 | Seattle
-  - 2025-07-16 00:00:00 | Seattle
+MISSING TMIN_F
+   Severity: Low
+   Count: 10
+   Percentage: 2.25%
+   Description: 10 missing values (2.25%) in tmin_f
+   Recommendation: Acceptable: tmin_f missing data within normal range.
+   Sample Records:
+     1. date: 2025-07-19 00:00:00 | city: Chicago | tmin_f: nan
+     2. date: 2025-07-20 00:00:00 | city: Chicago | tmin_f: nan
+     3. date: 2025-07-19 00:00:00 | city: Houston | tmin_f: nan
+
+MISSING ENERGY_MWH
+   Severity: Low
+   Count: 0
+   Description: 0 missing values (0.00%) in energy_mwh
+   Recommendation: Acceptable: energy_mwh missing data within normal range.
+
+TEMPERATURE OUTLIERS
+   Severity: Low
+   Count: 0
+   Description: 0 temperature records with extreme or illogical values
+   Recommendation: Review sensor calibration and data collection processes
+
+ENERGY OUTLIERS
+   Severity: Low
+   Count: 0
+   Description: 0 energy records with negative or extreme values
+   Recommendation: Investigate data collection and meter reading processes
+
+DATA FRESHNESS
+   Severity: Low
+   Count: 1
+   Description: Latest data is 1 days old (threshold: 2 days)
+   Recommendation: Good: Data freshness within acceptable range.
+   Sample Records:
+     1. latest_data_date: 2025-07-20 | current_date: 2025-07-21 | days_behind: 1
+
+DUPLICATE RECORDS
+   Severity: Low
+   Count: 0
+   Description: 0 duplicate records found (0.00%)
+   Recommendation: Implement deduplication in data pipeline
+
+MISSING CITIES
+   Severity: Low
+   Count: 0
+   Description: 0 expected cities missing from dataset
+   Recommendation: Check data source coverage and collection processes
+
+DATE GAPS
+   Severity: Low
+   Count: 0
+   Description: 0 missing dates in time series
+   Recommendation: Investigate data collection gaps and implement backfill process
+
+CONFIGURATION
+------------------------------
+Temp Max Threshold: 130.0
+Temp Min Threshold: -50.0
+Energy Min Threshold: 0.0
+Energy Outlier Std Multiplier: 3.0
+Freshness Days Threshold: 2
+Missing Data Critical Pct: 10.0
+Missing Data Warning Pct: 5.0
+Duplicate Critical Pct: 1.0

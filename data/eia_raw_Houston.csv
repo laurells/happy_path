@@ -1,84 +1,4 @@
 period,respondent,respondent-name,type,type-name,timezone,timezone-description,value,value-units
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1201797,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1206502,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1209716,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1204062,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1201797,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1242052,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1246521,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1250085,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1243984,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1242052,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1200299,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1204957,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1208096,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1202564,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1200299,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-1488,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-1534,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-1609,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-1488,megawatthours
-2025-04-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-1488,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1156174,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1164313,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1167853,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1160109,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1156174,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1167010,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1173325,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1176288,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1170273,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1167010,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1152804,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1160824,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1164507,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1156624,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1152804,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-3360,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-3480,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-3336,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-3476,megawatthours
-2025-04-20,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-3360,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1207627,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1203414,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1200622,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1205672,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1207627,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1222526,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1219232,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1217586,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1221059,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1222526,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1206075,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1202150,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1199377,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1204305,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1206075,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-1546,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-1257,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-1238,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-1360,megawatthours
-2025-04-21,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-1546,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1285560,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1280596,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1277673,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1283225,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1285560,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1268057,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1264101,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1261583,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1266231,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1268057,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1282454,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1277430,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1274491,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1280080,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1282454,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-3100,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-3160,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-3176,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-3139,megawatthours
-2025-04-22,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-3100,megawatthours
 2025-04-23,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1247638,megawatthours
 2025-04-23,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1249686,megawatthours
 2025-04-23,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1251724,megawatthours
@@ -1739,27 +1659,122 @@ period,respondent,respondent-name,type,type-name,timezone,timezone-description,v
 2025-07-14,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-625,megawatthours
 2025-07-14,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-586,megawatthours
 2025-07-14,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-631,megawatthours
-2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1576041,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1575662,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1572957,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1571182,megawatthours
-2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1574593,megawatthours
-2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1576041,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1574428,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1575662,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1570337,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1564890,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1563944,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1567835,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1570337,megawatthours
-2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1576429,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1574218,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1571423,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1569648,megawatthours
-2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1576429,megawatthours
-2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1576429,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1572860,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1574218,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-1441,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-1530,megawatthours
 2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-1529,megawatthours
-2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1610821,megawatthours
-2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1608029,megawatthours
-2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1605914,megawatthours
-2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1609640,megawatthours
-2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1610821,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-1564,megawatthours
+2025-07-15,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-1441,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1597302,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1594860,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1593078,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1596354,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1597302,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1614027,megawatthours
 2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1614979,megawatthours
 2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1613091,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1614594,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1614027,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1596883,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1594493,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1592711,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1595999,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1596883,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-422,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-370,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-371,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-358,megawatthours
+2025-07-16,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-422,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1572318,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1574507,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1575750,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1573289,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1572318,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1607325,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1607918,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1608460,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1607605,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1607325,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1572100,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1574194,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1575412,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1573021,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1572100,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-224,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-320,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-345,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-275,megawatthours
+2025-07-17,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-224,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1572266,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1570002,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1569496,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1571084,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1572266,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1593493,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1591034,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1591306,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1592193,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1593493,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1571540,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1569370,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1568870,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1570426,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1571540,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-718,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-624,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-618,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-649,megawatthours
+2025-07-18,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-718,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1578050,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1575702,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1574763,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1576802,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1578050,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1574272,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1574261,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1574315,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1574163,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1574272,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1576256,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1573882,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1572943,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1574984,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1576256,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Arizona,Arizona,-1794,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-1818,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-1818,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Mountain,Mountain,-1818,megawatthours
+2025-07-19,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Pacific,Pacific,-1794,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Arizona,Arizona,1575036,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Central,Central,1576117,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Eastern,Eastern,1576497,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Mountain,Mountain,1575773,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",D,Demand,Pacific,Pacific,1575036,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Arizona,Arizona,1580954,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1581369,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1580824,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Mountain,Mountain,1581218,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Pacific,Pacific,1580954,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Arizona,Arizona,1578126,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Central,Central,1575439,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Eastern,Eastern,1575833,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Mountain,Mountain,1578126,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",NG,Net generation,Pacific,Pacific,1578126,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Central,Central,-679,megawatthours
+2025-07-20,ERCO,"Electric Reliability Council of Texas, Inc.",TI,Total interchange,Eastern,Eastern,-664,megawatthours
+2025-07-21,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Central,Central,1630791,megawatthours
+2025-07-21,ERCO,"Electric Reliability Council of Texas, Inc.",DF,Day-ahead demand forecast,Eastern,Eastern,1630356,megawatthours

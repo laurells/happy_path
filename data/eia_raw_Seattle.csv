@@ -1,84 +1,4 @@
 period,respondent,respondent-name,type,type-name,timezone,timezone-description,value,value-units
-2025-04-19,SCL,Seattle City Light,D,Demand,Arizona,Arizona,22180,megawatthours
-2025-04-19,SCL,Seattle City Light,D,Demand,Central,Central,22168,megawatthours
-2025-04-19,SCL,Seattle City Light,D,Demand,Eastern,Eastern,22151,megawatthours
-2025-04-19,SCL,Seattle City Light,D,Demand,Mountain,Mountain,22179,megawatthours
-2025-04-19,SCL,Seattle City Light,D,Demand,Pacific,Pacific,22180,megawatthours
-2025-04-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,21421,megawatthours
-2025-04-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,21409,megawatthours
-2025-04-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,21410,megawatthours
-2025-04-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,21415,megawatthours
-2025-04-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,21421,megawatthours
-2025-04-19,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,15372,megawatthours
-2025-04-19,SCL,Seattle City Light,NG,Net generation,Central,Central,15447,megawatthours
-2025-04-19,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,15483,megawatthours
-2025-04-19,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,15411,megawatthours
-2025-04-19,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,15372,megawatthours
-2025-04-19,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-6808,megawatthours
-2025-04-19,SCL,Seattle City Light,TI,Total interchange,Central,Central,-6721,megawatthours
-2025-04-19,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-6668,megawatthours
-2025-04-19,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-6768,megawatthours
-2025-04-19,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-6808,megawatthours
-2025-04-20,SCL,Seattle City Light,D,Demand,Arizona,Arizona,22896,megawatthours
-2025-04-20,SCL,Seattle City Light,D,Demand,Central,Central,22875,megawatthours
-2025-04-20,SCL,Seattle City Light,D,Demand,Eastern,Eastern,22852,megawatthours
-2025-04-20,SCL,Seattle City Light,D,Demand,Mountain,Mountain,22880,megawatthours
-2025-04-20,SCL,Seattle City Light,D,Demand,Pacific,Pacific,22896,megawatthours
-2025-04-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,22595,megawatthours
-2025-04-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,22538,megawatthours
-2025-04-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,22461,megawatthours
-2025-04-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,22578,megawatthours
-2025-04-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,22595,megawatthours
-2025-04-20,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,15340,megawatthours
-2025-04-20,SCL,Seattle City Light,NG,Net generation,Central,Central,15342,megawatthours
-2025-04-20,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,15310,megawatthours
-2025-04-20,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,15357,megawatthours
-2025-04-20,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,15340,megawatthours
-2025-04-20,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-7556,megawatthours
-2025-04-20,SCL,Seattle City Light,TI,Total interchange,Central,Central,-7533,megawatthours
-2025-04-20,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-7542,megawatthours
-2025-04-20,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-7523,megawatthours
-2025-04-20,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-7556,megawatthours
-2025-04-21,SCL,Seattle City Light,D,Demand,Arizona,Arizona,25441,megawatthours
-2025-04-21,SCL,Seattle City Light,D,Demand,Central,Central,25349,megawatthours
-2025-04-21,SCL,Seattle City Light,D,Demand,Eastern,Eastern,25282,megawatthours
-2025-04-21,SCL,Seattle City Light,D,Demand,Mountain,Mountain,25405,megawatthours
-2025-04-21,SCL,Seattle City Light,D,Demand,Pacific,Pacific,25441,megawatthours
-2025-04-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,25275,megawatthours
-2025-04-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,25199,megawatthours
-2025-04-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,25158,megawatthours
-2025-04-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,25235,megawatthours
-2025-04-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,25275,megawatthours
-2025-04-21,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,15729,megawatthours
-2025-04-21,SCL,Seattle City Light,NG,Net generation,Central,Central,15803,megawatthours
-2025-04-21,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,15862,megawatthours
-2025-04-21,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,15713,megawatthours
-2025-04-21,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,15729,megawatthours
-2025-04-21,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-9712,megawatthours
-2025-04-21,SCL,Seattle City Light,TI,Total interchange,Central,Central,-9546,megawatthours
-2025-04-21,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-9420,megawatthours
-2025-04-21,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-9692,megawatthours
-2025-04-21,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-9712,megawatthours
-2025-04-22,SCL,Seattle City Light,D,Demand,Arizona,Arizona,24942,megawatthours
-2025-04-22,SCL,Seattle City Light,D,Demand,Central,Central,24947,megawatthours
-2025-04-22,SCL,Seattle City Light,D,Demand,Eastern,Eastern,24964,megawatthours
-2025-04-22,SCL,Seattle City Light,D,Demand,Mountain,Mountain,24937,megawatthours
-2025-04-22,SCL,Seattle City Light,D,Demand,Pacific,Pacific,24942,megawatthours
-2025-04-22,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,24393,megawatthours
-2025-04-22,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,24437,megawatthours
-2025-04-22,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,24468,megawatthours
-2025-04-22,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,24413,megawatthours
-2025-04-22,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,24393,megawatthours
-2025-04-22,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,14922,megawatthours
-2025-04-22,SCL,Seattle City Light,NG,Net generation,Central,Central,15017,megawatthours
-2025-04-22,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,15001,megawatthours
-2025-04-22,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,15005,megawatthours
-2025-04-22,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,14922,megawatthours
-2025-04-22,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-10020,megawatthours
-2025-04-22,SCL,Seattle City Light,TI,Total interchange,Central,Central,-9930,megawatthours
-2025-04-22,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-9963,megawatthours
-2025-04-22,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-9932,megawatthours
-2025-04-22,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-10020,megawatthours
 2025-04-23,SCL,Seattle City Light,D,Demand,Arizona,Arizona,23675,megawatthours
 2025-04-23,SCL,Seattle City Light,D,Demand,Central,Central,23831,megawatthours
 2025-04-23,SCL,Seattle City Light,D,Demand,Eastern,Eastern,23904,megawatthours
@@ -1759,13 +1679,108 @@ period,respondent,respondent-name,type,type-name,timezone,timezone-description,v
 2025-07-15,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-17824,megawatthours
 2025-07-15,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-18227,megawatthours
 2025-07-15,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-18603,megawatthours
-2025-07-16,SCL,Seattle City Light,D,Demand,Arizona,Arizona,27098,megawatthours
+2025-07-16,SCL,Seattle City Light,D,Demand,Arizona,Arizona,27180,megawatthours
 2025-07-16,SCL,Seattle City Light,D,Demand,Central,Central,27201,megawatthours
 2025-07-16,SCL,Seattle City Light,D,Demand,Eastern,Eastern,27218,megawatthours
 2025-07-16,SCL,Seattle City Light,D,Demand,Mountain,Mountain,27200,megawatthours
-2025-07-16,SCL,Seattle City Light,D,Demand,Pacific,Pacific,27098,megawatthours
+2025-07-16,SCL,Seattle City Light,D,Demand,Pacific,Pacific,27180,megawatthours
 2025-07-16,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,26822,megawatthours
 2025-07-16,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,26779,megawatthours
 2025-07-16,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,26761,megawatthours
 2025-07-16,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,26797,megawatthours
 2025-07-16,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,26822,megawatthours
+2025-07-16,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,8444,megawatthours
+2025-07-16,SCL,Seattle City Light,NG,Net generation,Central,Central,8004,megawatthours
+2025-07-16,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,7956,megawatthours
+2025-07-16,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,8267,megawatthours
+2025-07-16,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,8444,megawatthours
+2025-07-16,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-18736,megawatthours
+2025-07-16,SCL,Seattle City Light,TI,Total interchange,Central,Central,-19197,megawatthours
+2025-07-16,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-19262,megawatthours
+2025-07-16,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-18933,megawatthours
+2025-07-16,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-18736,megawatthours
+2025-07-17,SCL,Seattle City Light,D,Demand,Arizona,Arizona,25557,megawatthours
+2025-07-17,SCL,Seattle City Light,D,Demand,Central,Central,25672,megawatthours
+2025-07-17,SCL,Seattle City Light,D,Demand,Eastern,Eastern,25729,megawatthours
+2025-07-17,SCL,Seattle City Light,D,Demand,Mountain,Mountain,25606,megawatthours
+2025-07-17,SCL,Seattle City Light,D,Demand,Pacific,Pacific,25557,megawatthours
+2025-07-17,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,26227,megawatthours
+2025-07-17,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,26277,megawatthours
+2025-07-17,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,26317,megawatthours
+2025-07-17,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,26249,megawatthours
+2025-07-17,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,26227,megawatthours
+2025-07-17,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,8885,megawatthours
+2025-07-17,SCL,Seattle City Light,NG,Net generation,Central,Central,8959,megawatthours
+2025-07-17,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,9091,megawatthours
+2025-07-17,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,8871,megawatthours
+2025-07-17,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,8885,megawatthours
+2025-07-17,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-16672,megawatthours
+2025-07-17,SCL,Seattle City Light,TI,Total interchange,Central,Central,-16713,megawatthours
+2025-07-17,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-16638,megawatthours
+2025-07-17,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-16735,megawatthours
+2025-07-17,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-16672,megawatthours
+2025-07-18,SCL,Seattle City Light,D,Demand,Arizona,Arizona,23662,megawatthours
+2025-07-18,SCL,Seattle City Light,D,Demand,Central,Central,23832,megawatthours
+2025-07-18,SCL,Seattle City Light,D,Demand,Eastern,Eastern,23966,megawatthours
+2025-07-18,SCL,Seattle City Light,D,Demand,Mountain,Mountain,23739,megawatthours
+2025-07-18,SCL,Seattle City Light,D,Demand,Pacific,Pacific,23662,megawatthours
+2025-07-18,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,24562,megawatthours
+2025-07-18,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,24740,megawatthours
+2025-07-18,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,24856,megawatthours
+2025-07-18,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,24640,megawatthours
+2025-07-18,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,24562,megawatthours
+2025-07-18,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,9258,megawatthours
+2025-07-18,SCL,Seattle City Light,NG,Net generation,Central,Central,9066,megawatthours
+2025-07-18,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,8987,megawatthours
+2025-07-18,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,9161,megawatthours
+2025-07-18,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,9258,megawatthours
+2025-07-18,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-14404,megawatthours
+2025-07-18,SCL,Seattle City Light,TI,Total interchange,Central,Central,-14766,megawatthours
+2025-07-18,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-14979,megawatthours
+2025-07-18,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-14578,megawatthours
+2025-07-18,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-14404,megawatthours
+2025-07-19,SCL,Seattle City Light,D,Demand,Arizona,Arizona,21489,megawatthours
+2025-07-19,SCL,Seattle City Light,D,Demand,Central,Central,21600,megawatthours
+2025-07-19,SCL,Seattle City Light,D,Demand,Eastern,Eastern,21658,megawatthours
+2025-07-19,SCL,Seattle City Light,D,Demand,Mountain,Mountain,21533,megawatthours
+2025-07-19,SCL,Seattle City Light,D,Demand,Pacific,Pacific,21489,megawatthours
+2025-07-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,20981,megawatthours
+2025-07-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,21155,megawatthours
+2025-07-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,21254,megawatthours
+2025-07-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,21066,megawatthours
+2025-07-19,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,20981,megawatthours
+2025-07-19,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,8437,megawatthours
+2025-07-19,SCL,Seattle City Light,NG,Net generation,Central,Central,8513,megawatthours
+2025-07-19,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,8465,megawatthours
+2025-07-19,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,8505,megawatthours
+2025-07-19,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,8437,megawatthours
+2025-07-19,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-13052,megawatthours
+2025-07-19,SCL,Seattle City Light,TI,Total interchange,Central,Central,-13087,megawatthours
+2025-07-19,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-13193,megawatthours
+2025-07-19,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-13028,megawatthours
+2025-07-19,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-13052,megawatthours
+2025-07-20,SCL,Seattle City Light,D,Demand,Arizona,Arizona,21332,megawatthours
+2025-07-20,SCL,Seattle City Light,D,Demand,Central,Central,21301,megawatthours
+2025-07-20,SCL,Seattle City Light,D,Demand,Eastern,Eastern,21269,megawatthours
+2025-07-20,SCL,Seattle City Light,D,Demand,Mountain,Mountain,21324,megawatthours
+2025-07-20,SCL,Seattle City Light,D,Demand,Pacific,Pacific,21332,megawatthours
+2025-07-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,20661,megawatthours
+2025-07-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,20651,megawatthours
+2025-07-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,20628,megawatthours
+2025-07-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,20661,megawatthours
+2025-07-20,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,20661,megawatthours
+2025-07-20,SCL,Seattle City Light,NG,Net generation,Arizona,Arizona,10098,megawatthours
+2025-07-20,SCL,Seattle City Light,NG,Net generation,Central,Central,10125,megawatthours
+2025-07-20,SCL,Seattle City Light,NG,Net generation,Eastern,Eastern,10111,megawatthours
+2025-07-20,SCL,Seattle City Light,NG,Net generation,Mountain,Mountain,10104,megawatthours
+2025-07-20,SCL,Seattle City Light,NG,Net generation,Pacific,Pacific,10098,megawatthours
+2025-07-20,SCL,Seattle City Light,TI,Total interchange,Arizona,Arizona,-11234,megawatthours
+2025-07-20,SCL,Seattle City Light,TI,Total interchange,Central,Central,-11176,megawatthours
+2025-07-20,SCL,Seattle City Light,TI,Total interchange,Eastern,Eastern,-11158,megawatthours
+2025-07-20,SCL,Seattle City Light,TI,Total interchange,Mountain,Mountain,-11220,megawatthours
+2025-07-20,SCL,Seattle City Light,TI,Total interchange,Pacific,Pacific,-11234,megawatthours
+2025-07-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Arizona,Arizona,23037,megawatthours
+2025-07-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Central,Central,22958,megawatthours
+2025-07-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Eastern,Eastern,22896,megawatthours
+2025-07-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Mountain,Mountain,23005,megawatthours
+2025-07-21,SCL,Seattle City Light,DF,Day-ahead demand forecast,Pacific,Pacific,23037,megawatthours

@@ -75,6 +75,13 @@ def run_pipeline(start_date: str, end_date: str):
         try:
             # Fetch weather data
             weather = fetch_weather_data(city, start_date, end_date, noaa_token)
+            # Filter weather data to only include records within the date range
+            weather_df = pd.DataFrame(weather)
+            weather_df["date"] = pd.to_datetime(weather_df["date"])
+            start_dt = pd.to_datetime(start_date)
+            end_dt = pd.to_datetime(end_date)
+            weather_df = weather_df[(weather_df["date"] >= start_dt) & (weather_df["date"] <= end_dt)]
+            weather = weather_df.to_dict(orient="records")
             weather_validation = validate_weather_data(weather, city_name, start_date, end_date)
             
             if not weather_validation["is_valid"]:
@@ -87,6 +94,12 @@ def run_pipeline(start_date: str, end_date: str):
             
             # Fetch energy data
             energy = fetch_energy_data(city, start_date, end_date, eia_key)
+            # Filter energy data to only include records within the date range
+            energy_df = pd.DataFrame(energy)
+            if not energy_df.empty and "date" in energy_df.columns:
+                energy_df["date"] = pd.to_datetime(energy_df["date"])
+                energy_df = energy_df[(energy_df["date"] >= start_dt) & (energy_df["date"] <= end_dt)]
+                energy = energy_df.to_dict(orient="records")
             energy_validation = validate_energy_data(energy, city_name)
             
             if not energy_validation:
@@ -189,45 +202,10 @@ def run_pipeline(start_date: str, end_date: str):
     
     # Sort by city and date for consistent output
     df = df.sort_values(["city", "date"]).reset_index(drop=True)
-    
-    # FIXED: Use consistent filename instead of date-range-based naming
-    # This prevents creating new files every time the pipeline runs
+
+    # Always overwrite merged_data.csv with only the new data
     out_path = "data/merged_data.csv"
-    
-    # Check if existing data file exists and merge with new data
-    if os.path.exists(out_path):
-        logging.info(f"Existing data file found: {out_path}")
-        existing_df = pd.read_csv(out_path)
-        existing_df['date'] = pd.to_datetime(existing_df['date'])
-        df['date'] = pd.to_datetime(df['date'])
-        
-        # Remove overlapping records from existing data
-        # Keep only records that are NOT in the new date range
-        new_start = pd.to_datetime(start_date)
-        new_end = pd.to_datetime(end_date)
-        
-        # Filter existing data to exclude the date range we're updating
-        existing_filtered = existing_df[
-            ~((existing_df['date'] >= new_start) & (existing_df['date'] <= new_end))
-        ]
-        
-        logging.info(f"Existing data: {len(existing_df)} records")
-        logging.info(f"New data: {len(df)} records")
-        logging.info(f"Existing data after filtering: {len(existing_filtered)} records")
-        
-        # Combine existing and new data
-        combined_df = pd.concat([existing_filtered, df], ignore_index=True)
-        combined_df = combined_df.sort_values(['city', 'date']).reset_index(drop=True)
-        
-        # Remove any remaining duplicates (just in case)
-        combined_df = combined_df.drop_duplicates(subset=['date', 'city'], keep='last')
-        
-        logging.info(f"Combined data: {len(combined_df)} records")
-        df = combined_df
-    else:
-        logging.info(f"Creating new data file: {out_path}")
-    
-    # Save merged data to CSV for dashboard and analysis
+    logging.info(f"Overwriting data file: {out_path}")
     df.to_csv(out_path, index=False)
     logging.info(f"Saved merged data to {out_path}")
     

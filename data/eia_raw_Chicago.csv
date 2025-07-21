@@ -1,84 +1,4 @@
 period,respondent,respondent-name,type,type-name,timezone,timezone-description,value,value-units
-2025-04-19,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,1859100,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,1860381,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,1860314,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,1859942,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,1859100,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,1866504,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,1866987,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,1866940,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,1866933,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,1866504,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,1907844,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,1911693,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,1913124,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,1910071,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,1907844,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,48742,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,51310,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,52808,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,50127,megawatthours
-2025-04-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,48742,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,1778229,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,1781497,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,1784171,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,1779675,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,1778229,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,1806551,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,1806429,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,1807591,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,1806017,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,1806551,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,1871927,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,1871529,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,1873052,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,1871316,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,1871927,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,93695,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,90027,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,88876,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,91637,megawatthours
-2025-04-20,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,93695,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,1954729,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,1947254,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,1944658,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,1951008,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,1954729,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,1942467,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,1940266,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,1938994,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,1941446,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,1942467,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,2020455,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,2019712,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,2018898,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,2020339,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,2020455,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,65720,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,72454,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,74235,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,69326,megawatthours
-2025-04-21,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,65720,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,1972440,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,1973312,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,1972644,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,1973015,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,1972440,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,1962527,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,1961323,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,1960511,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,1962018,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,1962527,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,1985487,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,1981405,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,1980216,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,1983447,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,1985487,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,13048,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,8092,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,7572,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,10431,megawatthours
-2025-04-22,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,13048,megawatthours
 2025-04-23,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,1965444,megawatthours
 2025-04-23,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,1966137,megawatthours
 2025-04-23,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,1966554,megawatthours
@@ -1749,15 +1669,110 @@ period,respondent,respondent-name,type,type-name,timezone,timezone-description,v
 2025-07-15,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,2824286,megawatthours
 2025-07-15,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,2831590,megawatthours
 2025-07-15,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,2835061,megawatthours
-2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,2994973,megawatthours
-2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,2994973,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,3000033,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,2987135,megawatthours
 2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,2981067,megawatthours
-2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,2994973,megawatthours
-2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,2994973,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,2993708,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,3000033,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,34691,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,32507,megawatthours
 2025-07-15,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,32743,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,33335,megawatthours
+2025-07-15,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,34691,megawatthours
 2025-07-16,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,2952010,megawatthours
 2025-07-16,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,2954762,megawatthours
 2025-07-16,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,2955804,megawatthours
 2025-07-16,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,2953347,megawatthours
 2025-07-16,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,2952010,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,2861888,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,2862702,megawatthours
 2025-07-16,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,2863325,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,2862237,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,2861888,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,3072338,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,3075891,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,3076017,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,3074393,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,3072338,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,41529,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,41370,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,40237,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,41246,megawatthours
+2025-07-16,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,41529,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,2915057,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,2916889,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,2918810,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,2915644,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,2915057,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,2865333,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,2869266,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,2871040,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,2867424,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,2865333,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,2991298,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,2991708,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,2995278,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,2990892,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,2991298,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,26396,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,32085,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,36352,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,29186,megawatthours
+2025-07-17,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,26396,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,2669046,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,2684917,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,2694467,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,2676935,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,2669046,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,2648641,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,2660085,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,2666372,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,2654306,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,2648641,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,2785067,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,2803569,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,2813131,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,2794455,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,2785067,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,22160,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,24407,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,25096,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,23885,megawatthours
+2025-07-18,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,22160,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,2550428,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,2549896,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,2550151,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,2549472,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,2550428,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,2546357,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,2545868,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,2545446,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,2546300,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,2546357,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,2658888,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,2654630,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,2653535,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,2656483,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,2658888,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Arizona,Arizona,17206,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Central,Central,18634,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,18408,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Mountain,Mountain,17813,megawatthours
+2025-07-19,PJM,"PJM Interconnection, LLC",TI,Total interchange,Pacific,Pacific,17206,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",D,Demand,Arizona,Arizona,2603364,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",D,Demand,Central,Central,2600754,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",D,Demand,Eastern,Eastern,2598148,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",D,Demand,Mountain,Mountain,2602818,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",D,Demand,Pacific,Pacific,2603364,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Arizona,Arizona,2582243,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Central,Central,2580917,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,2580757,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Mountain,Mountain,2581223,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Pacific,Pacific,2582243,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Arizona,Arizona,2730618,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Central,Central,2730618,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Eastern,Eastern,2723118,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Mountain,Mountain,2730618,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",NG,Net generation,Pacific,Pacific,2730618,megawatthours
+2025-07-20,PJM,"PJM Interconnection, LLC",TI,Total interchange,Eastern,Eastern,28489,megawatthours
+2025-07-21,PJM,"PJM Interconnection, LLC",DF,Day-ahead demand forecast,Eastern,Eastern,2611149,megawatthours

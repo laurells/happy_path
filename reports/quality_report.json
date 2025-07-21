@@ -1,214 +1,226 @@
 {
-  "run_date": "2025-07-17",
-  "missing_values": {
-    "summary": {
-      "date": 0,
-      "city": 0,
-      "station_id": 15,
-      "tmax_f": 15,
-      "tmin_f": 15,
-      "has_both_temps": 15,
-      "energy_mwh": 0,
-      "region_code": 0,
-      "timezone": 0,
-      "data_source": 0,
-      "has_weather": 0,
-      "has_energy": 0,
-      "complete_record": 0
-    }
-  },
-  "outliers": {
-    "temperature": {
-      "count": 0,
-      "records": []
-    },
-    "energy": {
-      "count": 0,
-      "records": []
-    }
-  },
-  "freshness": {
-    "latest_data_date": "2025-07-16",
-    "current_date": "2025-07-17",
-    "is_stale": false,
-    "days_since_update": 1
-  },
-  "details": {
-    "missing_tmax_f": [
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Chicago",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Chicago",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Chicago",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Houston",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Houston",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Houston",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "New York",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "New York",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "New York",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Phoenix",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Phoenix",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Phoenix",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Seattle",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Seattle",
-        "tmax_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Seattle",
-        "tmax_f": null
-      }
-    ],
-    "missing_tmin_f": [
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Chicago",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Chicago",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Chicago",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Houston",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Houston",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Houston",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "New York",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "New York",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "New York",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Phoenix",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Phoenix",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Phoenix",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-14 00:00:00",
-        "city": "Seattle",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-15 00:00:00",
-        "city": "Seattle",
-        "tmin_f": null
-      },
-      {
-        "date": "2025-07-16 00:00:00",
-        "city": "Seattle",
-        "tmin_f": null
-      }
-    ],
-    "missing_energy_mwh": []
-  },
-  "consistency": {
-    "duplicates": "0",
+  "metadata": {
+    "run_date": "2025-07-21",
+    "total_records": 445,
     "date_range": {
-      "start": "2025-04-06",
-      "end": "2025-07-16"
+      "start": "2025-04-23",
+      "end": "2025-07-20"
     },
-    "cities_missing": []
-  },
-  "pipeline_stats": {
-    "cities_processed": 5,
-    "weather_records": 430,
-    "energy_records": 445,
-    "validation_failures": [],
-    "processing_errors": [],
-    "final_record_count": 510,
-    "cities_with_data": 5,
-    "date_range": {
-      "start": "2025-04-06 00:00:00",
-      "end": "2025-07-16 00:00:00"
+    "cities_analyzed": [
+      "Chicago",
+      "Houston",
+      "New York",
+      "Phoenix",
+      "Seattle"
+    ],
+    "thresholds_used": {
+      "temp_max_threshold": 130.0,
+      "temp_min_threshold": -50.0,
+      "energy_min_threshold": 0.0,
+      "energy_outlier_std_multiplier": 3.0,
+      "freshness_days_threshold": 2,
+      "missing_data_critical_pct": 10.0,
+      "missing_data_warning_pct": 5.0,
+      "duplicate_critical_pct": 1.0
     }
+  },
+  "issues": {
+    "missing_tmax_f": {
+      "issue_type": "Missing tmax_f",
+      "severity": "DataQualitySeverity.LOW",
+      "count": "10",
+      "percentage": 2.247191011235955,
+      "description": "10 missing values (2.25%) in tmax_f",
+      "records": [
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Chicago",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Chicago",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Houston",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Houston",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "New York",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "New York",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Phoenix",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Phoenix",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Seattle",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Seattle",
+          "tmax_f": NaN
+        }
+      ],
+      "recommendation": "Acceptable: tmax_f missing data within normal range."
+    },
+    "missing_tmin_f": {
+      "issue_type": "Missing tmin_f",
+      "severity": "DataQualitySeverity.LOW",
+      "count": "10",
+      "percentage": 2.247191011235955,
+      "description": "10 missing values (2.25%) in tmin_f",
+      "records": [
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Chicago",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Chicago",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Houston",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Houston",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "New York",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "New York",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Phoenix",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Phoenix",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-19 00:00:00",
+          "city": "Seattle",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-20 00:00:00",
+          "city": "Seattle",
+          "tmin_f": NaN
+        }
+      ],
+      "recommendation": "Acceptable: tmin_f missing data within normal range."
+    },
+    "missing_energy_mwh": {
+      "issue_type": "Missing energy_mwh",
+      "severity": "DataQualitySeverity.LOW",
+      "count": "0",
+      "percentage": 0.0,
+      "description": "0 missing values (0.00%) in energy_mwh",
+      "records": [],
+      "recommendation": "Acceptable: energy_mwh missing data within normal range."
+    },
+    "temperature_outliers": {
+      "issue_type": "Temperature Outliers",
+      "severity": "DataQualitySeverity.LOW",
+      "count": 0,
+      "percentage": 0.0,
+      "description": "0 temperature records with extreme or illogical values",
+      "records": [],
+      "recommendation": "Review sensor calibration and data collection processes"
+    },
+    "energy_outliers": {
+      "issue_type": "Energy Outliers",
+      "severity": "DataQualitySeverity.LOW",
+      "count": 0,
+      "percentage": 0.0,
+      "description": "0 energy records with negative or extreme values",
+      "records": [],
+      "recommendation": "Investigate data collection and meter reading processes"
+    },
+    "data_freshness": {
+      "issue_type": "Data Freshness",
+      "severity": "DataQualitySeverity.LOW",
+      "count": 1,
+      "percentage": 0.0,
+      "description": "Latest data is 1 days old (threshold: 2 days)",
+      "records": [
+        {
+          "latest_data_date": "2025-07-20",
+          "current_date": "2025-07-21",
+          "days_behind": 1
+        }
+      ],
+      "recommendation": "Good: Data freshness within acceptable range."
+    },
+    "duplicates": {
+      "issue_type": "Duplicate Records",
+      "severity": "DataQualitySeverity.LOW",
+      "count": 0,
+      "percentage": 0.0,
+      "description": "0 duplicate records found (0.00%)",
+      "records": [],
+      "recommendation": "Implement deduplication in data pipeline"
+    },
+    "missing_cities": {
+      "issue_type": "Missing Cities",
+      "severity": "DataQualitySeverity.LOW",
+      "count": 0,
+      "percentage": 0.0,
+      "description": "0 expected cities missing from dataset",
+      "records": [],
+      "recommendation": "Check data source coverage and collection processes"
+    },
+    "date_gaps": {
+      "issue_type": "Date Gaps",
+      "severity": "DataQualitySeverity.LOW",
+      "count": 0,
+      "percentage": 0.0,
+      "description": "0 missing dates in time series",
+      "records": [],
+      "recommendation": "Investigate data collection gaps and implement backfill process"
+    }
+  },
+  "summary": {
+    "total_issues": "21",
+    "critical_issues": 0,
+    "high_issues": 0,
+    "medium_issues": 0,
+    "low_issues": 9,
+    "quality_score": 75.0
   }
 }

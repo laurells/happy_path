@@ -10,6 +10,9 @@ from sklearn.linear_model import LinearRegression
 from datetime import date, timedelta, datetime, UTC
 # from pytz import timezone  # Deprecated: use zoneinfo instead
 from zoneinfo import ZoneInfo  # Modern timezone handling
+from pathlib import Path
+import logging
+from typing import List, Dict, Any, Optional
 
 # City coordinates, timezones, and mapping info for dashboard
 CITY_COORDS = {
@@ -38,6 +41,544 @@ def convert_to_local(utc_dt, city):
 def load_data(filepath):
     """Load a CSV file as a DataFrame, with Streamlit caching."""
     return pd.read_csv(filepath)
+
+# --- Data Quality Dashboard Module-Level Variables ---
+REPORTS_PATH = Path("reports")
+QUALITY_THRESHOLDS = {
+    'missing_critical': 10.0,
+    'missing_warning': 5.0,
+    'outlier_critical': 5.0,
+    'freshness_critical': 2,
+    'freshness_warning': 1
+}
+
+# --- Data Quality Dashboard Functions ---
+def load_quality_reports() -> pd.DataFrame:
+    try:
+        report_pattern = str(REPORTS_PATH / "quality_*.json")
+        report_files = glob.glob(report_pattern)
+        if not report_files:
+            st.error("No quality reports found. Please run the data pipeline first.")
+            return pd.DataFrame()
+        reports = []
+        for file in sorted(report_files):
+            try:
+                with open(file, 'r') as f:
+                    report = json.load(f)
+                report_data = _extract_report_data(report, file)
+                if report_data:
+                    reports.append(report_data)
+            except Exception as e:
+                logger.error(f"Error loading report {file}: {e}")
+                continue
+        if not reports:
+            st.error("Failed to load any valid quality reports.")
+            return pd.DataFrame()
+        df_reports = pd.DataFrame(reports)
+        df_reports['date'] = pd.to_datetime(df_reports['date'])
+        df_reports = df_reports.sort_values('date')
+        return df_reports
+    except Exception as e:
+        logger.error(f"Error in load_quality_reports: {e}")
+        st.error(f"Error loading reports: {str(e)}")
+        return pd.DataFrame()
+
+def _extract_report_data(report: Dict[str, Any], file_path: str) -> Optional[Dict[str, Any]]:
+    try:
+        if 'metadata' in report:
+            return {
+                'file_path': file_path,
+                'date': report['metadata']['run_date'],
+                'total_records': report['metadata']['total_records'],
+                'quality_score': report['summary']['quality_score'],
+                'critical_issues': report['summary']['critical_issues'],
+                'high_issues': report['summary']['high_issues'],
+                'medium_issues': report['summary']['medium_issues'],
+                'low_issues': report['summary']['low_issues'],
+                'missing_tmax': _get_issue_count(report, 'missing_tmax_f'),
+                'missing_tmin': _get_issue_count(report, 'missing_tmin_f'),
+                'missing_energy': _get_issue_count(report, 'missing_energy_mwh'),
+                'temp_outliers': _get_issue_count(report, 'temperature_outliers'),
+                'energy_outliers': _get_issue_count(report, 'energy_outliers'),
+                'duplicates': _get_issue_count(report, 'duplicates'),
+                'missing_cities': _get_issue_count(report, 'missing_cities'),
+                'date_gaps': _get_issue_count(report, 'date_gaps'),
+                'days_since_update': _get_freshness_days(report),
+                'is_stale': _is_data_stale(report),
+                'full_report': report
+            }
+        else:
+            return {
+                'file_path': file_path,
+                'date': report.get('run_date', ''),
+                'total_records': 0,
+                'quality_score': 0,
+                'critical_issues': 0,
+                'high_issues': 0,
+                'medium_issues': 0,
+                'low_issues': 0,
+                'missing_tmax': report.get('missing_values', {}).get('summary', {}).get('tmax_f', 0),
+                'missing_tmin': report.get('missing_values', {}).get('summary', {}).get('tmin_f', 0),
+                'missing_energy': report.get('missing_values', {}).get('summary', {}).get('energy_mwh', 0),
+                'temp_outliers': report.get('outliers', {}).get('temperature', {}).get('count', 0),
+                'energy_outliers': report.get('outliers', {}).get('energy', {}).get('count', 0),
+                'duplicates': 0,
+                'missing_cities': 0,
+                'date_gaps': 0,
+                'days_since_update': report.get('freshness', {}).get('days_since_update', 0),
+                'is_stale': report.get('freshness', {}).get('is_stale', False),
+                'full_report': report
+            }
+    except Exception as e:
+        logger.error(f"Error extracting report data: {e}")
+        return None
+
+def _get_issue_count(report: Dict[str, Any], issue_key: str) -> int:
+    try:
+        return report['issues'].get(issue_key, {}).get('count', 0)
+    except:
+        return 0
+
+def _get_freshness_days(report: Dict[str, Any]) -> int:
+    try:
+        return report['issues'].get('data_freshness', {}).get('count', 0)
+    except:
+        return 0
+
+def _is_data_stale(report: Dict[str, Any]) -> bool:
+    days = _get_freshness_days(report)
+    return days > QUALITY_THRESHOLDS['freshness_critical']
+
+def render_header():
+    st.markdown("""
+    <div style="text-align: center; padding: 1rem; background: linear-gradient(90deg, #1f4037 0%, #99f2c8 100%); border-radius: 10px; margin-bottom: 2rem;">
+        <h1 style="color: white; margin: 0;">Energy Data Quality Monitoring Dashboard</h1>
+        <p style="color: white; margin: 0.5rem 0 0 0;">Real-time monitoring of data pipeline health and quality</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+def render_sidebar_controls(df_reports: pd.DataFrame) -> Dict[str, Any]:
+    """Render sidebar controls and filters."""
+    st.sidebar.header("Dashboard Controls")
+    
+    # Date range filter
+    if not df_reports.empty:
+        min_date = df_reports['date'].min().date()
+        max_date = df_reports['date'].max().date()
+        
+        date_range = st.sidebar.date_input(
+            "Select Date Range",
+            value=(min_date, max_date),
+            min_value=min_date,
+            max_value=max_date
+        )
+        
+        if len(date_range) == 2:
+            start_date, end_date = date_range
+            filtered_df = df_reports[
+                (df_reports['date'].dt.date >= start_date) & 
+                (df_reports['date'].dt.date <= end_date)
+            ]
+        else:
+            filtered_df = df_reports
+    else:
+        filtered_df = df_reports
+    
+    # Auto-refresh option
+    auto_refresh = st.sidebar.checkbox("Auto-refresh (30s)", value=False)
+    if auto_refresh:
+        st.rerun()
+    
+    # Quality threshold controls
+    st.sidebar.subheader("Quality Thresholds")
+    
+    missing_threshold = st.sidebar.slider(
+        "Missing Data Critical %", 
+        min_value=1, max_value=50, 
+        value=int(QUALITY_THRESHOLDS['missing_critical'])
+    )
+    
+    freshness_threshold = st.sidebar.slider(
+        "Data Freshness (days)", 
+        min_value=1, max_value=7, 
+        value=QUALITY_THRESHOLDS['freshness_critical']
+    )
+    
+    return {
+        'filtered_df': filtered_df,
+        'missing_threshold': missing_threshold,
+        'freshness_threshold': freshness_threshold
+    }
+
+def render_kpi_metrics(latest_report: pd.Series, df_reports: pd.DataFrame):
+    """Render key performance indicator metrics."""
+    st.subheader("Key Performance Indicators")
+    
+    col1, col2, col3, col4, col5 = st.columns(5)
+    
+    # Data Quality Score
+    with col1:
+        score = latest_report.get('quality_score', 0)
+        st.metric(
+            label=f"Quality Score",
+            value=f"{score:.1f}%",
+            delta=_calculate_score_delta(df_reports) if len(df_reports) > 1 else None
+        )
+    
+    # Total Issues
+    with col2:
+        total_issues = (latest_report['critical_issues'] + latest_report['high_issues'] + 
+                      latest_report['medium_issues'] + latest_report['low_issues'])
+        st.metric(
+            label=f"Total Issues",
+            value=total_issues,
+            delta=_calculate_issue_delta(df_reports) if len(df_reports) > 1 else None
+        )
+    
+    # Missing Data
+    with col3:
+        missing_total = (latest_report['missing_tmax'] + latest_report['missing_tmin'] + 
+                       latest_report['missing_energy'])
+        if isinstance(missing_total, (int, float)) and pd.notnull(missing_total):
+            missing_value_str = f"{int(missing_total):,}"
+        else:
+            missing_value_str = "N/A"
+        st.metric(
+            label=f"Missing Values",
+            value=missing_value_str,
+            delta=_calculate_missing_delta(df_reports) if len(df_reports) > 1 else None
+        )
+    
+    # Outliers
+    with col4:
+        outliers_total = latest_report['temp_outliers'] + latest_report['energy_outliers']
+        st.metric(
+            label=f"Data Outliers",
+            value=f"{outliers_total:,}",
+            delta=_calculate_outlier_delta(df_reports) if len(df_reports) > 1 else None
+        )
+    
+    # Data Freshness
+    with col5:
+        days_old = latest_report['days_since_update']
+        freshness_status = "Fresh" if days_old <= 1 else "Aging" if days_old <= 2 else "Stale"
+        st.metric(
+            label=f"Data Freshness",
+            value=freshness_status,
+            delta=f"{days_old} days old"
+        )
+
+def render_quality_trends(df_reports: pd.DataFrame):
+    """Render quality trend visualizations."""
+    st.subheader("Data Quality Trends")
+    
+    if df_reports.empty:
+        st.warning("No trend data available")
+        return
+    
+    tab1, tab2, tab3, tab4 = st.tabs(["Quality Score", "Missing Values", "Outliers", "Freshness"])
+    
+    with tab1:
+        _render_quality_score_chart(df_reports)
+    
+    with tab2:
+        _render_missing_values_chart(df_reports)
+    
+    with tab3:
+        _render_outliers_chart(df_reports)
+    
+    with tab4:
+        _render_freshness_chart(df_reports)
+
+def _render_quality_score_chart(df_reports: pd.DataFrame):
+    """Render quality score trend chart."""
+    fig = go.Figure()
+    
+    fig.add_trace(go.Scatter(
+        x=df_reports['date'],
+        y=df_reports['quality_score'],
+        mode='lines+markers',
+        name='Quality Score',
+        line=dict(color='#2E86AB', width=3),
+        marker=dict(size=8, color='#2E86AB'),
+        fill='tonexty',
+        fillcolor='rgba(46, 134, 171, 0.1)'
+    ))
+    
+    # Add quality thresholds
+    fig.add_hline(y=90, line_dash="dash", line_color="green", 
+                 annotation_text="Excellent (90%)")
+    fig.add_hline(y=70, line_dash="dash", line_color="orange", 
+                 annotation_text="Good (70%)")
+    
+    fig.update_layout(
+        title="Data Quality Score Over Time",
+        xaxis_title="Date",
+        yaxis_title="Quality Score (%)",
+        yaxis=dict(range=[0, 100]),
+        hovermode='x unified'
+    )
+    
+    st.plotly_chart(fig, use_container_width=True)
+
+def _render_missing_values_chart(df_reports: pd.DataFrame):
+    """Render missing values trend chart."""
+    fig = go.Figure()
+    
+    # Absolute counts
+    fig.add_trace(go.Scatter(
+        x=df_reports['date'], y=df_reports['missing_tmax'],
+        name='Max Temperature', line=dict(color='#FF6B6B')
+    ))
+    
+    fig.add_trace(go.Scatter(
+        x=df_reports['date'], y=df_reports['missing_tmin'],
+        name='Min Temperature', line=dict(color='#4ECDC4')
+    ))
+    
+    fig.add_trace(go.Scatter(
+        x=df_reports['date'], y=df_reports['missing_energy'],
+        name='Energy', line=dict(color='#45B7D1')
+    ))
+    
+    # Percentage (if total_records is available)
+    if 'total_records' in df_reports.columns:
+        missing_tmax = pd.to_numeric(df_reports['missing_tmax'], errors='coerce')
+        total_records = pd.to_numeric(df_reports['total_records'], errors='coerce')
+        percent_missing_tmax = (missing_tmax / total_records * 100)
+        fig.add_trace(go.Scatter(
+            x=df_reports['date'],
+            y=percent_missing_tmax,
+            name='Max Temp %', line=dict(color='#FF6B6B', dash='dot')
+        ))
+    
+    fig.update_layout(title="Missing Values Analysis", hovermode='x unified')
+    st.plotly_chart(fig, use_container_width=True)
+
+def _render_outliers_chart(df_reports: pd.DataFrame):
+    """Render outliers trend chart."""
+    fig = go.Figure()
+    
+    fig.add_trace(go.Bar(
+        x=df_reports['date'], 
+        y=df_reports['temp_outliers'],
+        name='Temperature Outliers',
+        marker_color='#FF6B6B'
+    ))
+    
+    fig.add_trace(go.Bar(
+        x=df_reports['date'], 
+        y=df_reports['energy_outliers'],
+        name='Energy Outliers',
+        marker_color='#4ECDC4'
+    ))
+    
+    fig.update_layout(
+        title="Data Outliers Over Time",
+        xaxis_title="Date",
+        yaxis_title="Number of Outliers",
+        hovermode='x unified'
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+def _render_freshness_chart(df_reports: pd.DataFrame):
+    """Render data freshness chart."""
+    # Color code bars based on freshness
+    colors = df_reports['days_since_update'].apply(
+        lambda x: '#28a745' if x <= 1 else '#ffc107' if x <= 2 else '#dc3545'
+    )
+    
+    fig = go.Figure(data=[
+        go.Bar(
+            x=df_reports['date'],
+            y=df_reports['days_since_update'],
+            marker_color=colors,
+            name='Days Since Update',
+            text=df_reports['days_since_update'],
+            textposition='auto'
+        )
+    ])
+    
+    # Add freshness thresholds
+    fig.add_hline(y=1, line_dash="dash", line_color="green", 
+                 annotation_text="Fresh (≤1 day)")
+    fig.add_hline(y=2, line_dash="dash", line_color="orange", 
+                 annotation_text="Warning (≤2 days)")
+    
+    fig.update_layout(
+        title="Data Freshness Over Time",
+        xaxis_title="Date",
+        yaxis_title="Days Since Latest Data",
+        hovermode='x unified'
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+def render_detailed_analysis(latest_report: pd.Series):
+    """Render detailed analysis section."""
+    st.subheader("Detailed Quality Analysis")
+    
+    if 'full_report' not in latest_report or not latest_report['full_report']:
+        st.warning("Detailed analysis not available for this report.")
+        return
+    
+    report = latest_report['full_report']
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("### Temperature Issues")
+        if 'issues' in report:
+            temp_issues = report['issues'].get('temperature_outliers', {})
+            if temp_issues.get('records'):
+                temp_df = pd.DataFrame(temp_issues['records'])
+                st.dataframe(temp_df, use_container_width=True)
+                
+                # Temperature outlier chart
+                if len(temp_df) > 0:
+                    fig = px.scatter(
+                        temp_df, x='tmax_f', y='tmin_f', 
+                        color='city', title="Temperature Outliers",
+                        hover_data=['date']
+                    )
+                    st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.success("No temperature outliers found")
+        else:
+            st.info("Temperature analysis not available")
+    
+    with col2:
+        st.markdown("### Energy Issues")
+        if 'issues' in report:
+            energy_issues = report['issues'].get('energy_outliers', {})
+            if energy_issues.get('records'):
+                energy_df = pd.DataFrame(energy_issues['records'])
+                st.dataframe(energy_df, use_container_width=True)
+                
+                # Energy outlier chart
+                if len(energy_df) > 0:
+                    fig = px.histogram(
+                        energy_df, x='energy_mwh', 
+                        title="Energy Outlier Distribution",
+                        nbins=20
+                    )
+                    st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.success("No energy outliers found")
+        else:
+            st.info("Energy analysis not available")
+
+def render_documentation():
+    """Render comprehensive documentation."""
+    with st.expander("Understanding Data Quality Metrics", expanded=False):
+        st.markdown("""
+        ### Data Quality Framework
+        
+        #### Quality Score (0-100%)
+        - **90-100%**: Excellent data quality
+        - **70-89%**: Good data quality with minor issues
+        - **50-69%**: Fair data quality requiring attention
+        - **<50%**: Poor data quality needing immediate action
+        
+        #### Missing Values Analysis
+        - **Critical (>10%)**: Significant data gaps affecting analysis
+        - **Warning (5-10%)**: Moderate gaps requiring monitoring
+        - **Acceptable (<5%)**: Normal operational range
+        
+        #### Outlier Detection
+        - **Temperature**: Flags impossible values (>130°F, <-50°F) or logical errors (max < min)
+        - **Energy**: Identifies negative consumption values and statistical anomalies
+        - **Impact**: Outliers can skew forecasts and indicate sensor malfunctions
+        
+        #### Data Freshness
+        - **Fresh (≤1 day)**: Current and actionable
+        - **Aging (1-2 days)**: Still usable but monitor pipeline
+        - **Stale (>2 days)**: May impact forecast accuracy
+        
+        #### Data Consistency
+        - **Duplicates**: Checks for redundant records that could bias analysis
+        - **Coverage**: Ensures all expected cities and dates are present
+        - **Completeness**: Validates data pipeline integrity
+        """)
+
+def render_alerts_section(latest_report: pd.Series):
+    """Render alerts and recommendations."""
+    st.subheader("Alerts & Recommendations")
+    
+    alerts = []
+    
+    # Quality score alerts
+    score = latest_report.get('quality_score', 100)
+    if score < 50:
+        alerts.append(("Critical", f"Quality score is {score:.1f}% - Immediate action required"))
+    elif score < 70:
+        alerts.append(("Warning", f"Quality score is {score:.1f}% - Monitor closely"))
+    
+    # Missing data alerts
+    total_missing = (latest_report['missing_tmax'] + latest_report['missing_tmin'] + 
+                    latest_report['missing_energy'])
+    if isinstance(total_missing, (int, float)) and pd.notnull(total_missing):
+        if total_missing > 1000:
+            alerts.append(("Critical", f"{int(total_missing):,} missing values detected"))
+        elif total_missing > 100:
+            alerts.append(("Warning", f"{int(total_missing):,} missing values - investigate data sources"))
+    
+    # Freshness alerts
+    days_old = latest_report['days_since_update']
+    if days_old > 3:
+        alerts.append(("Critical", f"Data is {days_old} days old - check pipeline"))
+    elif days_old > 1:
+        alerts.append(("Warning", f"Data is {days_old} days old - monitor updates"))
+    
+    # Outlier alerts
+    total_outliers = latest_report['temp_outliers'] + latest_report['energy_outliers']
+    if total_outliers > 50:
+        alerts.append(("Warning", f"{total_outliers} outliers detected - review data sources"))
+    
+    if alerts:
+        for alert_type, message in alerts:
+            if "Critical" in alert_type:
+                st.error(f"{alert_type}: {message}")
+            else:
+                st.warning(f"{alert_type}: {message}")
+    else:
+        st.success("No critical issues detected - data quality is within acceptable ranges")
+
+def _calculate_score_delta(df_reports: pd.DataFrame) -> Optional[float]:
+    """Calculate quality score delta from previous report."""
+    if len(df_reports) < 2:
+        return None
+    current_score = df_reports.iloc[-1]['quality_score']
+    previous_score = df_reports.iloc[-2]['quality_score']
+    return round(current_score - previous_score, 1)
+
+def _calculate_issue_delta(df_reports: pd.DataFrame) -> Optional[int]:
+    """Calculate total issues delta from previous report."""
+    if len(df_reports) < 2:
+        return None
+    current_issues = (df_reports.iloc[-1]['critical_issues'] + df_reports.iloc[-1]['high_issues'] + 
+                     df_reports.iloc[-1]['medium_issues'] + df_reports.iloc[-1]['low_issues'])
+    previous_issues = (df_reports.iloc[-2]['critical_issues'] + df_reports.iloc[-2]['high_issues'] + 
+                      df_reports.iloc[-2]['medium_issues'] + df_reports.iloc[-2]['low_issues'])
+    return int(current_issues - previous_issues)
+
+def _calculate_missing_delta(df_reports: pd.DataFrame) -> Optional[int]:
+    """Calculate missing values delta from previous report."""
+    if len(df_reports) < 2:
+        return None
+    current_missing = (df_reports.iloc[-1]['missing_tmax'] + df_reports.iloc[-1]['missing_tmin'] + 
+                      df_reports.iloc[-1]['missing_energy'])
+    previous_missing = (df_reports.iloc[-2]['missing_tmax'] + df_reports.iloc[-2]['missing_tmin'] + 
+                       df_reports.iloc[-2]['missing_energy'])
+    return int(current_missing - previous_missing)
+
+def _calculate_outlier_delta(df_reports: pd.DataFrame) -> Optional[int]:
+    """Calculate outliers delta from previous report."""
+    if len(df_reports) < 2:
+        return None
+    current_outliers = df_reports.iloc[-1]['temp_outliers'] + df_reports.iloc[-1]['energy_outliers']
+    previous_outliers = df_reports.iloc[-2]['temp_outliers'] + df_reports.iloc[-2]['energy_outliers']
+    return int(current_outliers - previous_outliers)
+
 
 # Main dashboard page: all analytics and visualizations
 # -----------------------------------------------------
@@ -76,7 +617,33 @@ def show_main_dashboard():
         st.warning("Please select a valid start and end date for the date range.")
         return
 
-    cities = st.sidebar.multiselect("City", list(CITY_COORDS.keys()), default=list(CITY_COORDS.keys()))
+    st.sidebar.subheader("Cities")
+    all_cities = list(CITY_COORDS.keys())
+
+    # Radio for All Cities or Select Cities
+    city_mode = st.sidebar.radio(
+        "City Selection Mode",
+        ["All Cities", "Select Cities"],
+        index=0,
+        key="city_mode"
+    )
+
+    if city_mode == "All Cities":
+        cities = all_cities
+    else:
+        # Show checkboxes for each city
+        checked_cities = []
+        for city in all_cities:
+            if st.sidebar.checkbox(city, value=False, key=f"city_{city}"):
+                checked_cities.append(city)
+        # If none checked, default to first city
+        if not checked_cities:
+            st.sidebar.info(f"At least one city must be selected. Showing: {all_cities[0]}")
+            checked_cities = [all_cities[0]]
+        cities = checked_cities
+        # If all cities are checked, show a message
+        if len(checked_cities) == len(all_cities):
+            st.sidebar.info("All cities selected.")
 
     # Filter data based on sidebar selections
     mask = (
@@ -768,99 +1335,49 @@ def show_main_dashboard():
 # Data quality dashboard page: shows data quality metrics and trends
 # ------------------------------------------------------------------
 def show_data_quality_dashboard():
-    st.title("Energy Data Quality Monitoring")
-    # Find all quality report JSON files
-    report_files = glob.glob("reports/quality_*.json")
-    reports = []
-    for file in report_files:
-        with open(file) as f:
-            report = json.load(f)
-            reports.append({
-                'date': report['run_date'],
-                'missing_tmax': report['missing_values']['summary'].get('tmax_f', 0),
-                'missing_tmin': report['missing_values']['summary'].get('tmin_f', 0),
-                'missing_energy': report['missing_values']['summary'].get('energy_mwh', 0),
-                'temp_outliers': report['outliers']['temperature']['count'],
-                'energy_outliers': report['outliers']['energy']['count'],
-                'stale_data': report['freshness']['is_stale'],
-                'days_since_update': report['freshness']['days_since_update']
-            })
-    if not reports:
-        st.warning("No quality reports found. Run the pipeline first.")
-        st.stop()
-    df_reports = pd.DataFrame(reports)
-    df_reports['date'] = pd.to_datetime(df_reports['date'])
-    latest = df_reports.iloc[-1]
-    # Show summary metrics for latest report
-    st.subheader("Latest Report Summary")
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Missing Values", f"{latest['missing_tmax'] + latest['missing_tmin'] + latest['missing_energy']}")
-    col2.metric("Data Outliers", f"{latest['temp_outliers'] + latest['energy_outliers']}")
-    col3.metric("Data Freshness", 
-                "Stale" if latest['stale_data'] else "Fresh",
-                f"{latest['days_since_update']} days since update")
-    # Show trends over time
-    st.subheader("Data Quality Over Time")
-    tab1, tab2, tab3 = st.tabs(["Missing Values", "Outliers", "Freshness"])
-    with tab1:
-        fig_missing = px.line(df_reports, x='date', y=['missing_tmax', 'missing_tmin', 'missing_energy'],
-                             title="Missing Values Trend")
-        st.plotly_chart(fig_missing, use_container_width=True)
-    with tab2:
-        fig_outliers = px.line(df_reports, x='date', y=['temp_outliers', 'energy_outliers'],
-                              title="Data Outliers Trend")
-        st.plotly_chart(fig_outliers, use_container_width=True)
-    with tab3:
-        fig_freshness = px.bar(df_reports, x='date', y='days_since_update',
-                              title="Days Since Latest Data Update")
-        fig_freshness.update_traces(marker_color=df_reports['days_since_update'].apply(
-            lambda x: 'red' if x > 2 else 'orange' if x > 1 else 'green'))
-        st.plotly_chart(fig_freshness, use_container_width=True)
-    # Documentation for business users
-    st.subheader("Quality Check Documentation")
-    expander = st.expander("Understanding Data Quality Metrics")
-    with expander:
-        st.markdown("""
-        **Missing Values Check**  
-        *Why it matters*: Missing data points reduce forecasting accuracy and indicate pipeline failures.  
-        *Check*: Counts nulls in temperature and energy fields.
-        
-        **Temperature Outliers**  
-        *Why it matters*: Extreme values indicate sensor errors or data corruption.  
-        *Check*: Flags temperatures >130°F, < -50°F, or when max < min.
-        
-        **Energy Outliers**  
-        *Why it matters*: Negative consumption is physically impossible.  
-        *Check*: Identifies negative energy values.
-        
-        **Data Freshness**  
-        *Why it matters*: Stale data reduces forecast relevance.  
-        *Check*: Verifies data is <48 hours old.
-        
-        **Data Consistency**  
-        *Why it matters*: Ensures complete geographic coverage.  
-        *Check*: Confirms all 5 cities are present with no duplicates.
-        """)
-    # Show detailed findings from the latest report
-    st.subheader("Latest Detailed Findings")
-    if report_files:
-        with open(report_files[-1]) as f:
-            latest_report = json.load(f)
-        cols = st.columns(2)
-        with cols[0]:
-            st.write("**Temperature Outliers**")
-            if latest_report['outliers']['temperature']['records']:
-                temp_df = pd.DataFrame(latest_report['outliers']['temperature']['records'])
-                st.dataframe(temp_df)
-            else:
-                st.success("No temperature outliers found")
-        with cols[1]:
-            st.write("**Missing Energy Data**")
-            if latest_report['details'].get('missing_energy_mwh'):
-                missing_df = pd.DataFrame(latest_report['details']['missing_energy_mwh'])
-                st.dataframe(missing_df[['date', 'city']])
-            else:
-                st.success("No missing energy data")
+    """Main function to render the enhanced data quality dashboard."""
+    
+    # Initialize dashboard
+    # dashboard = DataQualityDashboard() # This line is removed as the class is removed
+    
+    # Render header
+    render_header()
+    
+    # Load reports
+    df_reports = load_quality_reports()
+    
+    if df_reports.empty:
+        st.info("Once you run the data pipeline, quality reports will appear here.")
+        return
+    
+    # Render sidebar controls
+    controls = render_sidebar_controls(df_reports)
+    filtered_df = controls['filtered_df']
+    
+    if filtered_df.empty:
+        st.warning("No reports found for the selected date range.")
+        return
+    
+    # Get latest report
+    latest_report = filtered_df.iloc[-1]
+    
+    # Render main dashboard sections
+    render_kpi_metrics(latest_report, filtered_df)
+    render_alerts_section(latest_report)
+    render_quality_trends(filtered_df)
+    render_detailed_analysis(latest_report)
+    render_documentation()
+    
+    # Footer with report info
+    st.markdown("---")
+    st.markdown(f"""
+    **Report Information:**
+    - Latest Report: {latest_report['date'].strftime('%Y-%m-%d %H:%M:%S')}
+    - Total Reports: {len(filtered_df)}
+    - Records Analyzed: {latest_report.get('total_records', 'N/A'):,}
+    """)
+
+
 
 # --- Sidebar Navigation ---
 # Choose which dashboard page to show
