@@ -104,6 +104,11 @@ if ($RemoveExisting) {
     }
 }
 
+# Remove existing task if it exists
+if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) {
+    Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
+}
+
 # Create the scheduled task
 Write-Host "Creating Windows Task Scheduler job..." -ForegroundColor Yellow
 

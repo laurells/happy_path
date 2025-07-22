@@ -4,13 +4,14 @@ import sys
 from datetime import date, timedelta
 from pipeline.data_pipeline import run_pipeline
 import yaml
+import argparse
 from dotenv import load_dotenv
 
 """
 Automated script to fetch and process daily weather and energy data for all configured cities.
 Designed for automated execution via Windows Task Scheduler, cron, or manual runs.
 Features:
-- Fetches data for the last 7 days to ensure no gaps
+- Fetches data for the last 90 days to ensure no gaps
 - Comprehensive logging for monitoring
 - Error handling and exit codes for automation
 - Configurable date ranges
@@ -22,7 +23,6 @@ def setup_logging():
     os.makedirs("logs", exist_ok=True)
     
     # Create a unique log file for each run
-    from datetime import datetime
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_filename = f"logs/daily_pipeline_{timestamp}.log"
     
@@ -94,20 +94,16 @@ if __name__ == "__main__":
     logging.info("="*50)
     
     # Parse command line arguments
-    import argparse
     parser = argparse.ArgumentParser(description='Run the daily data pipeline')
     parser.add_argument('--start-date', help='Start date (YYYY-MM-DD)')
     parser.add_argument('--end-date', help='End date (YYYY-MM-DD)')
-    parser.add_argument('--days-back', type=int, default=7, 
-                       help='Days to look back if start-date not provided (default: 7)')
     
     args = parser.parse_args()
     
     # Run the pipeline
     success = run_automated_pipeline(
         start_date=args.start_date,
-        end_date=args.end_date,
-        days_back=args.days_back
+        end_date=args.end_date
     )
     
     # Exit with appropriate code for automation

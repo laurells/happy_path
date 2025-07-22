@@ -5,6 +5,8 @@ import yaml
 from dotenv import load_dotenv
 from datetime import date, timedelta, datetime, timezone
 import pytz
+import pandas as pd
+from pipeline.data_quality import run_data_quality_checks, generate_quality_report
 
 """
 Script to fetch and process 90 days of historical weather and energy data for all configured cities.
@@ -42,10 +44,6 @@ if __name__ == "__main__":
     run_pipeline(start_date=start_date.isoformat(), end_date=end_date.isoformat())
 
     # Run data quality check and generate report
-    import pandas as pd
-    from pipeline.data_quality import run_data_quality_checks, generate_quality_report
-    from datetime import datetime
-
     df = pd.read_csv("data/merged_data.csv")
     report_date = datetime.now().strftime('%Y-%m-%d')
     quality_report = run_data_quality_checks(df, report_date)
