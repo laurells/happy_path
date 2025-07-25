@@ -93,10 +93,16 @@ pip install -r requirements.txt
 .\scripts\setup_automation.ps1 -RemoveExisting
 ```
 
-#### Option 2: Batch Script Setup
+#### Option 2: Script Setup for Linux and Mac users
 ```cmd
 # Run as Administrator
-.\scripts\setup_automation.bat
+.\run_daily_cron.sh
+
+# Next, run this command to add the cron job to cron tab
+crontab -e
+
+# then add this line to the cron tab
+0 6 * * * scripts/run_pipeline_cron.sh
 ```
 
 #### Monitoring Automation
