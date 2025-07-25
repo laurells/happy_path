@@ -794,7 +794,7 @@ def show_main_dashboard():
         st.plotly_chart(fig, use_container_width=True)
         
         # Add summary statistics below the map
-        col1, col2, col3, col4, col5 = st.columns(5)
+        col1, col2, col3, col4 = st.columns(4)
         
         with col1:
             high_usage_count = len(map_df[map_df["status"] == "High Usage"])
@@ -803,19 +803,16 @@ def show_main_dashboard():
         with col2:
             low_usage_count = len(map_df[map_df["status"] == "Low Usage"])
             st.metric("Cities with Low Usage", low_usage_count)
+    
         
         with col3:
-            avg_temp = map_df[map_df["temp_val"].notna()]["temp_val"].mean()
-            st.metric("Average Temperature", f"{avg_temp:.1f}°F" if not pd.isna(avg_temp) else "N/A")
-        
-        with col4:
             # Average energy usage for the most recent day across all cities
             latest_day = df_filt["date"].max()
             latest_day_df = df_filt[df_filt["date"] == latest_day]
             avg_energy_latest_day = latest_day_df["energy_mwh"].mean()
             st.metric("Avg Energy (Latest Day)", f"{avg_energy_latest_day:.1f} MWh" if not pd.isna(avg_energy_latest_day) else "N/A")
         
-        with col5:
+        with col4:
             # Average energy usage for all days and all cities in the filtered data
             avg_energy_all_days = df_filt["energy_mwh"].mean()
             st.metric("Avg Energy (All Days)", f"{avg_energy_all_days:.1f} MWh" if not pd.isna(avg_energy_all_days) else "N/A")
