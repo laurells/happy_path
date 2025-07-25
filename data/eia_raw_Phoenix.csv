@@ -1,84 +1,4 @@
 period,respondent,respondent-name,type,type-name,timezone,timezone-description,value,value-units
-2025-04-23,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,82526,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,D,Demand,Central,Central,82292,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,82078,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,82443,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,82526,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,85070,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,84927,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,84762,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,85053,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,85070,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,47996,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,48027,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,47826,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,48194,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,47996,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-34530,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-34265,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-34252,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-34249,megawatthours
-2025-04-23,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-34530,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,82493,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,D,Demand,Central,Central,82701,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,82848,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,82565,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,82493,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,83358,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,83363,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,83391,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,83342,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,83358,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,50554,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,50134,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,50073,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,50313,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,50554,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-31939,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-32567,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-32775,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-32252,megawatthours
-2025-04-24,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-31939,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,81015,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,D,Demand,Central,Central,81063,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,81084,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,81046,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,81015,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,83796,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,83894,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,83938,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,83927,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,83796,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,53346,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,53416,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,53425,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,53203,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,53346,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-27669,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-27647,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-27659,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-27843,megawatthours
-2025-04-25,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-27669,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,72838,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,D,Demand,Central,Central,73567,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,74058,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,73162,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,72838,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,76979,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,76720,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,76741,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,76773,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,76979,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,57966,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,57601,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,57282,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,57830,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,57966,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-14872,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-15966,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-16776,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-15332,megawatthours
-2025-04-26,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-14872,megawatthours
 2025-04-27,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,67633,megawatthours
 2025-04-27,AZPS,Arizona Public Service Company,D,Demand,Central,Central,67480,megawatthours
 2025-04-27,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,67435,megawatthours
@@ -1687,8 +1607,88 @@ period,respondent,respondent-name,type,type-name,timezone,timezone-description,v
 2025-07-20,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-62313,megawatthours
 2025-07-20,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-61077,megawatthours
 2025-07-20,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-60666,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,129581,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,D,Demand,Central,Central,128380,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,127762,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,128811,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,129581,megawatthours
 2025-07-21,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,128415,megawatthours
 2025-07-21,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,127911,megawatthours
 2025-07-21,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,127631,megawatthours
 2025-07-21,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,128163,megawatthours
 2025-07-21,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,128415,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,72531,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,71647,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,71853,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,72020,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,72531,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-57050,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-56733,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-55909,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-56791,megawatthours
+2025-07-21,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-57050,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,134119,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,D,Demand,Central,Central,134274,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,134046,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,134383,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,134119,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,128575,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,128828,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,128920,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,128727,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,128575,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,77902,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,77309,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,76176,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,77873,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,77902,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-56217,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-56965,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-57870,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-56510,megawatthours
+2025-07-22,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-56217,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,128556,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,D,Demand,Central,Central,129340,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,129731,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,128927,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,128556,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,127226,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,127766,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,128045,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,127511,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,127226,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,82607,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,82984,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,82960,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,82644,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,82607,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-45949,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-46356,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-46771,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-46283,megawatthours
+2025-07-23,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-45949,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,D,Demand,Arizona,Arizona,127770,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,D,Demand,Central,Central,127696,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,D,Demand,Eastern,Eastern,127657,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,D,Demand,Mountain,Mountain,127708,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,D,Demand,Pacific,Pacific,127770,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,125737,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,125572,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,125432,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,125668,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,125737,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,NG,Net generation,Arizona,Arizona,86056,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,NG,Net generation,Central,Central,85444,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,NG,Net generation,Eastern,Eastern,85279,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,NG,Net generation,Mountain,Mountain,85830,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,NG,Net generation,Pacific,Pacific,86056,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,TI,Total interchange,Arizona,Arizona,-41714,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,TI,Total interchange,Central,Central,-42252,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,TI,Total interchange,Eastern,Eastern,-42378,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,TI,Total interchange,Mountain,Mountain,-41878,megawatthours
+2025-07-24,AZPS,Arizona Public Service Company,TI,Total interchange,Pacific,Pacific,-41714,megawatthours
+2025-07-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Arizona,Arizona,128168,megawatthours
+2025-07-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Central,Central,127961,megawatthours
+2025-07-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Eastern,Eastern,127980,megawatthours
+2025-07-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Mountain,Mountain,127972,megawatthours
+2025-07-25,AZPS,Arizona Public Service Company,DF,Day-ahead demand forecast,Pacific,Pacific,128168,megawatthours

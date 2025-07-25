@@ -59,6 +59,7 @@ def fetch_energy_data(city_config: Dict, start_date: str, end_date: str, api_key
     
     while True:
         current_data = []  # Initialize for this iteration
+        total_count = 0    # Initialize total_count to avoid UnboundLocalError
         
         for attempt in range(max_retries):
             try:

@@ -7,7 +7,7 @@ import glob
 import os
 import json
 from sklearn.linear_model import LinearRegression
-from datetime import date, timedelta, datetime, UTC
+from datetime import datetime, UTC
 # from pytz import timezone  # Deprecated: use zoneinfo instead
 from zoneinfo import ZoneInfo  # Modern timezone handling
 from pathlib import Path
@@ -69,7 +69,7 @@ def load_quality_reports() -> pd.DataFrame:
                 if report_data:
                     reports.append(report_data)
             except Exception as e:
-                logger.error(f"Error loading report {file}: {e}")
+                logging.error(f"Error loading report {file}: {e}")
                 continue
         if not reports:
             st.error("Failed to load any valid quality reports.")
@@ -79,7 +79,7 @@ def load_quality_reports() -> pd.DataFrame:
         df_reports = df_reports.sort_values('date')
         return df_reports
     except Exception as e:
-        logger.error(f"Error in load_quality_reports: {e}")
+        logging.error(f"Error in load_quality_reports: {e}")
         st.error(f"Error loading reports: {str(e)}")
         return pd.DataFrame()
 
@@ -130,7 +130,7 @@ def _extract_report_data(report: Dict[str, Any], file_path: str) -> Optional[Dic
                 'full_report': report
             }
     except Exception as e:
-        logger.error(f"Error extracting report data: {e}")
+        logging.error(f"Error extracting report data: {e}")
         return None
 
 def _get_issue_count(report: Dict[str, Any], issue_key: str) -> int:
@@ -214,7 +214,7 @@ def render_kpi_metrics(latest_report: pd.Series, df_reports: pd.DataFrame):
     """Render key performance indicator metrics."""
     st.subheader("Key Performance Indicators")
     
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4 = st.columns(4)
     
     # Data Quality Score
     with col1:
@@ -236,21 +236,21 @@ def render_kpi_metrics(latest_report: pd.Series, df_reports: pd.DataFrame):
         )
     
     # Missing Data
-    with col3:
-        missing_total = (latest_report['missing_tmax'] + latest_report['missing_tmin'] + 
-                       latest_report['missing_energy'])
-        if isinstance(missing_total, (int, float)) and pd.notnull(missing_total):
-            missing_value_str = f"{int(missing_total):,}"
-        else:
-            missing_value_str = "N/A"
-        st.metric(
-            label=f"Missing Values",
-            value=missing_value_str,
-            delta=_calculate_missing_delta(df_reports) if len(df_reports) > 1 else None
-        )
+    # with col3:
+    #     missing_total = (latest_report['missing_tmax'] + latest_report['missing_tmin'] + 
+    #                    latest_report['missing_energy'])
+    #     if isinstance(missing_total, (int, float)) and pd.notnull(missing_total):
+    #         missing_value_str = f"{int(missing_total):,}"
+    #     else:
+    #         missing_value_str = "N/A"
+    #     st.metric(
+    #         label=f"Missing Values",
+    #         value=missing_value_str,
+    #         delta=_calculate_missing_delta(df_reports) if len(df_reports) > 1 else None
+      #  )
     
     # Outliers
-    with col4:
+    with col3:
         outliers_total = latest_report['temp_outliers'] + latest_report['energy_outliers']
         st.metric(
             label=f"Data Outliers",
@@ -259,7 +259,7 @@ def render_kpi_metrics(latest_report: pd.Series, df_reports: pd.DataFrame):
         )
     
     # Data Freshness
-    with col5:
+    with col4:
         days_old = latest_report['days_since_update']
         freshness_status = "Fresh" if days_old <= 1 else "Aging" if days_old <= 2 else "Stale"
         st.metric(
@@ -561,15 +561,15 @@ def _calculate_issue_delta(df_reports: pd.DataFrame) -> Optional[int]:
                       df_reports.iloc[-2]['medium_issues'] + df_reports.iloc[-2]['low_issues'])
     return int(current_issues - previous_issues)
 
-def _calculate_missing_delta(df_reports: pd.DataFrame) -> Optional[int]:
-    """Calculate missing values delta from previous report."""
-    if len(df_reports) < 2:
-        return None
-    current_missing = (df_reports.iloc[-1]['missing_tmax'] + df_reports.iloc[-1]['missing_tmin'] + 
-                      df_reports.iloc[-1]['missing_energy'])
-    previous_missing = (df_reports.iloc[-2]['missing_tmax'] + df_reports.iloc[-2]['missing_tmin'] + 
-                       df_reports.iloc[-2]['missing_energy'])
-    return int(current_missing - previous_missing)
+# def _calculate_missing_delta(df_reports: pd.DataFrame) -> Optional[int]:
+#     """Calculate missing values delta from previous report."""
+#     if len(df_reports) < 2:
+#         return None
+#     current_missing = (df_reports.iloc[-1]['missing_tmax'] + df_reports.iloc[-1]['missing_tmin'] + 
+#                       df_reports.iloc[-1]['missing_energy'])
+#     previous_missing = (df_reports.iloc[-2]['missing_tmax'] + df_reports.iloc[-2]['missing_tmin'] + 
+#                        df_reports.iloc[-2]['missing_energy'])
+#     return int(current_missing - previous_missing)
 
 def _calculate_outlier_delta(df_reports: pd.DataFrame) -> Optional[int]:
     """Calculate outliers delta from previous report."""
@@ -1338,7 +1338,7 @@ def show_data_quality_dashboard():
     """Main function to render the enhanced data quality dashboard."""
     
     # Initialize dashboard
-    # dashboard = DataQualityDashboard() # This line is removed as the class is removed
+
     
     # Render header
     render_header()

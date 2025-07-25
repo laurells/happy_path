@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "run_date": "2025-07-21",
+    "run_date": "2025-07-25",
     "total_records": 445,
     "date_range": {
-      "start": "2025-04-23",
-      "end": "2025-07-20"
+      "start": "2025-04-27",
+      "end": "2025-07-24"
     },
     "cities_analyzed": [
       "Chicago",
@@ -28,9 +28,9 @@
     "missing_tmax_f": {
       "issue_type": "Missing tmax_f",
       "severity": "DataQualitySeverity.LOW",
-      "count": "10",
-      "percentage": 2.247191011235955,
-      "description": "10 missing values (2.25%) in tmax_f",
+      "count": "18",
+      "percentage": 4.044943820224719,
+      "description": "18 missing values (4.04%) in tmax_f",
       "records": [
         {
           "date": "2025-07-19 00:00:00",
@@ -43,12 +43,32 @@
           "tmax_f": NaN
         },
         {
-          "date": "2025-07-19 00:00:00",
+          "date": "2025-07-21 00:00:00",
+          "city": "Chicago",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-22 00:00:00",
+          "city": "Chicago",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-23 00:00:00",
+          "city": "Chicago",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-24 00:00:00",
+          "city": "Chicago",
+          "tmax_f": NaN
+        },
+        {
+          "date": "2025-07-23 00:00:00",
           "city": "Houston",
           "tmax_f": NaN
         },
         {
-          "date": "2025-07-20 00:00:00",
+          "date": "2025-07-24 00:00:00",
           "city": "Houston",
           "tmax_f": NaN
         },
@@ -60,26 +80,6 @@
         {
           "date": "2025-07-20 00:00:00",
           "city": "New York",
-          "tmax_f": NaN
-        },
-        {
-          "date": "2025-07-19 00:00:00",
-          "city": "Phoenix",
-          "tmax_f": NaN
-        },
-        {
-          "date": "2025-07-20 00:00:00",
-          "city": "Phoenix",
-          "tmax_f": NaN
-        },
-        {
-          "date": "2025-07-19 00:00:00",
-          "city": "Seattle",
-          "tmax_f": NaN
-        },
-        {
-          "date": "2025-07-20 00:00:00",
-          "city": "Seattle",
           "tmax_f": NaN
         }
       ],
@@ -88,9 +88,9 @@
     "missing_tmin_f": {
       "issue_type": "Missing tmin_f",
       "severity": "DataQualitySeverity.LOW",
-      "count": "10",
-      "percentage": 2.247191011235955,
-      "description": "10 missing values (2.25%) in tmin_f",
+      "count": "18",
+      "percentage": 4.044943820224719,
+      "description": "18 missing values (4.04%) in tmin_f",
       "records": [
         {
           "date": "2025-07-19 00:00:00",
@@ -103,12 +103,32 @@
           "tmin_f": NaN
         },
         {
-          "date": "2025-07-19 00:00:00",
+          "date": "2025-07-21 00:00:00",
+          "city": "Chicago",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-22 00:00:00",
+          "city": "Chicago",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-23 00:00:00",
+          "city": "Chicago",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-24 00:00:00",
+          "city": "Chicago",
+          "tmin_f": NaN
+        },
+        {
+          "date": "2025-07-23 00:00:00",
           "city": "Houston",
           "tmin_f": NaN
         },
         {
-          "date": "2025-07-20 00:00:00",
+          "date": "2025-07-24 00:00:00",
           "city": "Houston",
           "tmin_f": NaN
         },
@@ -120,26 +140,6 @@
         {
           "date": "2025-07-20 00:00:00",
           "city": "New York",
-          "tmin_f": NaN
-        },
-        {
-          "date": "2025-07-19 00:00:00",
-          "city": "Phoenix",
-          "tmin_f": NaN
-        },
-        {
-          "date": "2025-07-20 00:00:00",
-          "city": "Phoenix",
-          "tmin_f": NaN
-        },
-        {
-          "date": "2025-07-19 00:00:00",
-          "city": "Seattle",
-          "tmin_f": NaN
-        },
-        {
-          "date": "2025-07-20 00:00:00",
-          "city": "Seattle",
           "tmin_f": NaN
         }
       ],
@@ -180,8 +180,8 @@
       "description": "Latest data is 1 days old (threshold: 2 days)",
       "records": [
         {
-          "latest_data_date": "2025-07-20",
-          "current_date": "2025-07-21",
+          "latest_data_date": "2025-07-24",
+          "current_date": "2025-07-25",
           "days_behind": 1
         }
       ],
@@ -216,7 +216,7 @@
     }
   },
   "summary": {
-    "total_issues": "21",
+    "total_issues": "37",
     "critical_issues": 0,
     "high_issues": 0,
     "medium_issues": 0,

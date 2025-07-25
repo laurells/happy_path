@@ -28,6 +28,10 @@ def nan_to_none(obj):
         return {k: nan_to_none(v) for k, v in obj.items()}
     if isinstance(obj, list):
         return [nan_to_none(x) for x in obj]
+    if isinstance(obj, tuple):
+        return tuple(nan_to_none(x) for x in obj)
+    if isinstance(obj, (pd.DataFrame, pd.Series)):
+        return obj.where(pd.notnull(obj), None)
     return obj
 
 

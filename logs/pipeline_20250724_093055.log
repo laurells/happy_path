@@ -1,0 +1,3 @@
+2025-07-24 09:30:55 - INFO - Starting automated pipeline execution
+2025-07-24 09:30:56 - INFO - Log file: logs\pipeline_20250724_093055.log
+2025-07-24 09:30:56 - ERROR - Pipeline failed with exit code 1

@@ -65,11 +65,11 @@ pip install -r requirements.txt
 ### Manual Execution
 - **Daily fetch:**
   ```
-  python scripts/run_daily_pipeline.py
+  python -m scripts/run_daily_pipeline.py
   ```
 - **Fetch 90 days of historical data:**
   ```
-  python scripts/fetch_historical.py
+  python -m scripts/fetch_historical.py
   ```
 - **Custom date range:**
   ```
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ### Automated Execution (Windows)
 
-#### Option 1: PowerShell Setup (Recommended)
+#### PowerShell Setup (Recommended)
 ```powershell
 # Run as Administrator for system-wide task
 .\scripts\setup_automation.ps1 -RunAsAdmin

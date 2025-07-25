@@ -1,11 +1,12 @@
 import os
 import logging
 import sys
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from pipeline.data_pipeline import run_pipeline
 import yaml
 import argparse
 from dotenv import load_dotenv
+from pathlib import Path
 
 """
 Automated script to fetch and process daily weather and energy data for all configured cities.
@@ -48,8 +49,12 @@ def run_automated_pipeline(start_date=None, end_date=None):
         days_back: Number of days to look back if start_date not provided
     """
     try:
+        # Set the base directory to the script's directory
+        BASE_DIR = Path(__file__).parent.parent
+        os.chdir(BASE_DIR)  # Change working directory to the project root
+
         # Load environment variables (API keys)
-        load_dotenv()
+        load_dotenv(BASE_DIR / '.env')
         
         # Validate API keys
         noaa_token = os.getenv('NOAA_API_TOKEN')

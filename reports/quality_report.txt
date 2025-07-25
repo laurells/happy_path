@@ -1,12 +1,12 @@
 COMPREHENSIVE DATA QUALITY REPORT
-Generated: 2025-07-21
+Generated: 2025-07-25
 ============================================================
 
 EXECUTIVE SUMMARY
 ------------------------------
 Overall Quality Score: 75.0/100
 Total Records Analyzed: 445
-Date Range: 2025-04-23 to 2025-07-20
+Date Range: 2025-04-27 to 2025-07-24
 Cities Covered: 5
 
 ISSUE SUMMARY
@@ -21,25 +21,25 @@ DETAILED FINDINGS
 
 MISSING TMAX_F
    Severity: Low
-   Count: 10
-   Percentage: 2.25%
-   Description: 10 missing values (2.25%) in tmax_f
+   Count: 18
+   Percentage: 4.04%
+   Description: 18 missing values (4.04%) in tmax_f
    Recommendation: Acceptable: tmax_f missing data within normal range.
    Sample Records:
      1. date: 2025-07-19 00:00:00 | city: Chicago | tmax_f: nan
      2. date: 2025-07-20 00:00:00 | city: Chicago | tmax_f: nan
-     3. date: 2025-07-19 00:00:00 | city: Houston | tmax_f: nan
+     3. date: 2025-07-21 00:00:00 | city: Chicago | tmax_f: nan
 
 MISSING TMIN_F
    Severity: Low
-   Count: 10
-   Percentage: 2.25%
-   Description: 10 missing values (2.25%) in tmin_f
+   Count: 18
+   Percentage: 4.04%
+   Description: 18 missing values (4.04%) in tmin_f
    Recommendation: Acceptable: tmin_f missing data within normal range.
    Sample Records:
      1. date: 2025-07-19 00:00:00 | city: Chicago | tmin_f: nan
      2. date: 2025-07-20 00:00:00 | city: Chicago | tmin_f: nan
-     3. date: 2025-07-19 00:00:00 | city: Houston | tmin_f: nan
+     3. date: 2025-07-21 00:00:00 | city: Chicago | tmin_f: nan
 
 MISSING ENERGY_MWH
    Severity: Low
@@ -65,7 +65,7 @@ DATA FRESHNESS
    Description: Latest data is 1 days old (threshold: 2 days)
    Recommendation: Good: Data freshness within acceptable range.
    Sample Records:
-     1. latest_data_date: 2025-07-20 | current_date: 2025-07-21 | days_behind: 1
+     1. latest_data_date: 2025-07-24 | current_date: 2025-07-25 | days_behind: 1
 
 DUPLICATE RECORDS
    Severity: Low
